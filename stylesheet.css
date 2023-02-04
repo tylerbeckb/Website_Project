@@ -8,4 +8,6 @@ h1 {
     position: absolute;
     left: 250px;
     top: 150px;
+    font-size: 50px;
+    font-family: Calibri;
 }
