@@ -5,6 +5,7 @@
     width: 100%;
     height: 550px;
     position: relative;
+    top: 50px;
     z-index: -1; /* pushes image to the back of the webpage */
     opacity: 0.75;
 }
@@ -18,15 +19,19 @@ h1 {
     font-family: Calibri;
 }
 
+/* Navigation bar */
+
 nav {
     background-color: white;
     position: fixed;
     left: 0;
     right: 0;
     top: 0;
-    height: 30px;
+    height: 50px;
     display: flex;
     align-items: center;
+    font-size: 18px;
+    left: 300px;
 }
 
 nav * {
@@ -34,7 +39,7 @@ nav * {
 }
 
 nav li {
-    margin: 20px;
+    margin: 50px;
 }
 
 nav li a {
