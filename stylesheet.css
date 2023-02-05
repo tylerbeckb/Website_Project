@@ -19,6 +19,14 @@ h1 {
     font-family: Calibri;
 }
 
+header p {
+    color: white;
+    font-size: 25px;
+    position: relative;
+    bottom: 300px;
+    left: 250px;
+}
+
 /* Navigation bar */
 
 nav {
@@ -31,7 +39,7 @@ nav {
     display: flex;
     align-items: center;
     font-size: 18px;
-    left: 300px;
+    left: 200px;
 }
 
 nav * {
@@ -40,11 +48,16 @@ nav * {
 
 nav li {
     margin: 50px;
+    cursor: pointer;
 }
 
 nav li a {
     color: black;
     text-decoration: none;
+}
+
+nav li :hover {
+    opacity: 0.5;
 }
 
 * {
