@@ -64,6 +64,8 @@ h2 {
   font-size: 40px;
 }
 
+/* Makes text a square box */
+
 .square {
   width: 40%;
   height: 40%;
@@ -82,6 +84,20 @@ h2 {
   position: relative;
   left: 90%;
 }
+
+.square_right {
+    width: 40%;
+    height: 40%;
+    position: relative;
+    margin-left: 50%;
+    bottom: 110px;
+}
+
+.square_right p {
+    padding-top: 5%
+}
+
+/* Aligns img to the right */
 
 .right_img {
     height: 20%;
