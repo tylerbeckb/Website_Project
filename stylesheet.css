@@ -108,6 +108,14 @@ h2 {
     bottom: 150px;
 }
 
+.left_img {
+  height: 25%;
+  width: 35%;
+  position: relative;
+  left: 10%;
+  bottom: 600px;
+}
+
 * {
   margin: 0;
   padding: 0;
