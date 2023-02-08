@@ -88,6 +88,14 @@ h2 {
     bottom: 110px;
 }
 
+.square_left {
+  width: 40%;
+  height: 40%;
+  position: relative;
+  margin-left: 12%;
+  bottom: 400px;
+}
+
 /* Aligns img to the right */
 
 .right_img {
