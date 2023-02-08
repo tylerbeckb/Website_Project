@@ -71,11 +71,6 @@ h2 {
   height: 40%;
   position: relative;
   margin-left: 15%;
-  margin-top: 10%;
-}
-
-.square p {
-  padding-top: 5%;
 }
 
 .square img {
@@ -91,11 +86,6 @@ h2 {
     position: relative;
     margin-left: 50%;
     bottom: 110px;
-}
-
-.square_right p {
-    padding-top: 5%;
-    padding-bottom: 5%;
 }
 
 /* Aligns img to the right */
