@@ -156,3 +156,17 @@ h2 {
   bottom: 400px;
   color: white;
 }
+
+.col {
+  display: flex;
+}
+
+.left {
+  width: 60%;
+  padding: 100px;
+}
+
+.right {
+  width: 40%;
+  padding: 100px;
+}
