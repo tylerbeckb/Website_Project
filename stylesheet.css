@@ -184,6 +184,19 @@ h2 {
   color: grey;
 }
 
+.right button {
+  position: absolute;
+  background-color: green;
+  border: none;
+  cursor: pointer;
+  height: 5%;
+  width: 15%;
+  color: white;
+  font-size: 25px;
+  left: 70%;
+  top: 205%;
+}
+
 .key_word {
   color: forestgreen;
 }
