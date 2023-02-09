@@ -184,7 +184,7 @@ h2 {
   color: grey;
 }
 
-.right button {
+.right a {
   position: absolute;
   background-color: green;
   border: none;
@@ -195,6 +195,8 @@ h2 {
   font-size: 25px;
   left: 70%;
   top: 205%;
+  text-decoration: none;
+  text-align: center;
 }
 
 .key_word {
