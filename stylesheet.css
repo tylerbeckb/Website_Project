@@ -157,6 +157,8 @@ h2 {
   color: white;
 }
 
+/* Layout */
+
 .col {
   display: flex;
 }
@@ -201,4 +203,22 @@ h2 {
 
 .key_word {
   color: forestgreen;
+}
+
+/* How to help page */
+
+/* Layout */
+
+.col {
+  display: flex;
+}
+
+.left {
+  width: 50%;
+  padding: 100px;
+}
+
+.right {
+  width: 50%;
+  padding: 100px;
 }
