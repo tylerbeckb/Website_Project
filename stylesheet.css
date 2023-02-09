@@ -171,6 +171,19 @@ h2 {
   padding: 100px;
 }
 
+.right img {
+  width: 500px;
+  position: relative;
+  right: 50px;
+  margin-top: 50px;
+}
+
+.right figcaption {
+  position: relative;
+  font-size: 15px;
+  color: grey;
+}
+
 .key_word {
   color: forestgreen;
 }
