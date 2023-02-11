@@ -209,16 +209,27 @@ h2 {
 
 /* Layout */
 
-.col {
-  display: flex;
+.left_50 {
+  width: 50%;
+  padding: 75px;
 }
 
-.left {
-  width: 50%;
-  padding: 100px;
+.left_50 a {
+  position: absolute;
+  border: black;
+  border-style: solid;
+  border-radius: 10px;
+  border-width: 2px;
+  width: 10%;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  left: 15%;
+
 }
 
-.right {
+.right_50 {
   width: 50%;
-  padding: 100px;
+  padding: 75px;
 }
