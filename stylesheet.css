@@ -228,9 +228,8 @@ h2 {
 }
 
 .left_50 a:hover {
-  color: orangered;
-  border: orangered solid 1px;
-  background:#fff;
+  color: white;
+  background:black;
 }
 
 .right_50 {
@@ -242,4 +241,17 @@ h2 {
   width: 600px;
   position: relative;
   margin-top: 50px;
+}
+
+footer {
+  background-color: whitesmoke;
+  text-align: center;
+  align-items: center;
+}
+
+footer p {
+  margin: auto;
+  width: 35%;
+  text-align: center;
+  align-items: center;
 }
