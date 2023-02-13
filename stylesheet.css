@@ -255,3 +255,18 @@ footer p {
   text-align: center;
   align-items: center;
 }
+
+/* single column layout */
+
+.main_col {
+  margin: auto;
+  padding: 50px;
+  width: 70%;
+  align-items: center;
+  text-align: center;
+  background-color: white;
+}
+
+.background_smoke {
+  background-color: whitesmoke;
+}
