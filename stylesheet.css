@@ -267,6 +267,27 @@ footer p {
   background-color: white;
 }
 
+.main_col p {
+  margin: auto;
+  width: 50%;
+}
+
+.main_col a {
+  position: relative;
+  align-items: center;
+  text-align: center;
+  border-style: solid;
+  border-radius: 5px;
+  border-width: 2px;
+  text-decoration: none;
+  color: black;
+}
+
+.main_col a:hover {
+  color: white;
+  background:black;
+}
+
 .background_smoke {
   background-color: whitesmoke;
 }
