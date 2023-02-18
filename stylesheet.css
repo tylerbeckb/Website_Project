@@ -117,7 +117,7 @@ h2 {
   margin-top: 50px;
 }
 
-.right figcaption {
+figcaption {
   position: relative;
   font-size: 15px;
   color: grey;
