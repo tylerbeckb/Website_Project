@@ -39,6 +39,7 @@ nav a :hover {
   font-size: 20px;
   overflow-x: hidden;
   line-height: 1.5;
+  box-sizing: border-box;
 }
 
 h2 {
@@ -75,7 +76,8 @@ h2 {
 /* Layout 60/40 */
 
 .col {
-  display: flex;
+  content:"";
+  display: table;
 }
 
 .left {
@@ -120,6 +122,7 @@ figcaption {
 
 .left_50 {
   width: 50%;
+  float:left;
   padding: 75px;
 }
 
@@ -143,6 +146,7 @@ figcaption {
 
 .right_50 {
   width: 50%;
+  float: left;
   padding: 75px;
 }
 
@@ -218,4 +222,14 @@ footer p {
 
 .background_smoke {
   background-color: whitesmoke;
+}
+
+@media only screen and (max-width: 620px) {
+  /* Mobile Phones */
+  .left_50{
+    width: 100%;
+  }
+  .right_50{
+    width: 100%;
+  }
 }
