@@ -70,13 +70,14 @@ h2 {
   display: inline-block;
 }
 
-.centre {
+.title {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate( -50%, -50% );
+  left: 20%;
+  bottom: 40%;
   text-align: center;
   color: white;
+  box-sizing: border-box;
+  font-size: 50px;
 }
 
 /* Layout 60/40 */
@@ -105,7 +106,11 @@ h2 {
   margin-top: 100px;
 }
 
-figcaption {
+figure{
+  position: relative;
+}
+
+.figcaption {
   position: relative;
   font-size: 15px;
   color: grey;
@@ -129,7 +134,8 @@ figcaption {
 .left_50 {
   width: 50%;
   float:left;
-  padding: 75px;
+  padding: 50px;
+  margin-top: 75px;
 }
 
 .left_btn {
@@ -153,7 +159,9 @@ figcaption {
 .right_50 {
   width: 50%;
   float: left;
-  padding: 75px;
+  padding: 50px;
+  padding-bottom: 100px;
+  margin-top: 75px;
 }
 
 .right_btn {
