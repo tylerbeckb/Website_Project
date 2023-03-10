@@ -52,6 +52,10 @@ h2 {
 
 /* Background image */
 
+.large_background {
+  display: block;
+}
+
 .large_background h1 {
   font-size: 50px;
 }
@@ -63,14 +67,15 @@ h2 {
   position: relative;
   top: 50px;
   z-index: -1; 
+  display: inline-block;
 }
 
 .centre {
-  position: relative;
-  margin: auto;
-  text-align:center;
-  vertical-align: middle;
-  bottom: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate( -50%, -50% );
+  text-align: center;
   color: white;
 }
 
