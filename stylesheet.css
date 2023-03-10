@@ -233,10 +233,23 @@ footer p {
 
 @media only screen and (max-width: 750px) {
   /* Mobile Phones */
-  .left_50{
+
+  * {
+    font-size: 15px;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
+  .large_background h1 {
+    font-size: 30px;
+  }
+
+  .left_50 {
     width: 100%;
   }
-  .right_50{
+  .right_50 {
     width: 100%;
   }
 }
