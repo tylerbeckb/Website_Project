@@ -83,21 +83,21 @@ h2 {
 
 .left {
   width: 60%;
+  float: left;
   padding: 100px;
 }
 
 .right {
   width: 40%;
-  padding: 100px;
+  float: left;
+  padding: 50px;
 }
 
 .right img {
-  width: 30%;
+  width: 100%;
   height: auto;
-  max-width: 100%;
   position: relative;
-  right: 50px;
-  margin-top: 50px;
+  margin-top: 100px;
 }
 
 figcaption {
@@ -107,7 +107,7 @@ figcaption {
 }
 
 .btn_green {
-  position: absolute;
+  position: relative;
   background-color: green;
   border: none;
   cursor: pointer;
@@ -115,8 +115,6 @@ figcaption {
   width: 15%;
   color: white;
   font-size: 25px;
-  left: 72%;
-  top: 205%;
   text-decoration: none;
   text-align: center;
 }
