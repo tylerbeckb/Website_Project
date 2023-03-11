@@ -160,7 +160,7 @@ figure{
   border-style: solid;
   border-radius: 10px;
   border-width: 2px;
-  width: 10%;
+  width: 15%;
   cursor: pointer;
   text-decoration: none;
   text-align: center;
@@ -255,5 +255,13 @@ footer p {
 
   .col_40 {
     width: 100%;
+  }
+
+  .left_btn {
+    left: 40%;
+  }
+
+  .right_btn {
+    left: 40%;
   }
 }
