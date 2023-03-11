@@ -259,4 +259,12 @@ footer p {
   .right_50 {
     width: 100%;
   }
+
+  .left {
+    width:100%
+  }
+
+  .right {
+    width: 100%;
+  }
 }
