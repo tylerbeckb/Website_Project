@@ -86,19 +86,19 @@ h2 {
   display: table;
 }
 
-.left {
+.col_60 {
   width: 60%;
   float: left;
   padding: 100px;
 }
 
-.right {
+.col_40 {
   width: 40%;
   float: left;
   padding: 50px;
 }
 
-.right img {
+.col_40 img {
   width: 100%;
   height: auto;
   position: relative;
@@ -130,7 +130,7 @@ figure{
 
 /* Layout 50/50  */
 
-.left_50 {
+.col_50 {
   width: 50%;
   float:left;
   padding: 50px;
@@ -153,14 +153,6 @@ figure{
 .left_btn:hover {
   color: white;
   background:black;
-}
-
-.right_50 {
-  width: 50%;
-  float: left;
-  padding: 50px;
-  padding-bottom: 100px;
-  margin-top: 75px;
 }
 
 .right_btn {
@@ -253,18 +245,15 @@ footer p {
     font-size: 30px;
   }
 
-  .left_50 {
-    width: 100%;
-  }
-  .right_50 {
+  .col_50 {
     width: 100%;
   }
 
-  .left {
+  .col_60 {
     width:100%
   }
 
-  .right {
+  .col_40 {
     width: 100%;
   }
 }
