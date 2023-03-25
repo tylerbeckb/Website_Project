@@ -11,8 +11,21 @@ window.onload = function () {
 
   // Function displays the questions
   function displayQuestion(index) {
+    document.getElementById("questions").innerHTML = "";
     var question = Object.keys(questionArray)[index];
     document.getElementById("questions").innerHTML = question; 
-  }
-  displayQuestion(index)
+  };
+
+  // Function displays all answers
+  function displayAnswer(index) {
+    var answersArray = questionArray[Object.keys(questionArray)[index]];
+    document.getElementById("a1").innerHTML = "";
+    document.getElementById("a2").innerHTML = "";
+    document.getElementById("a3").innerHTML = "";
+    document.getElementById("a1").innerHTML = answersArray[0];
+    document.getElementById("a2").innerHTML = answersArray[1];
+    document.getElementById("a3").innerHTML = answersArray[2];
+  };
+  displayQuestion(index);
+  displayAnswer(index);
 }
