@@ -234,7 +234,14 @@ footer p {
 .quiz h1 {
   text-align: center;
   padding-top: 8%;
+  font-size:28px;
+}
+
+#questions {
+  text-align: center;
   font-size: 40px;
+  color: black;
+  padding: 50px;
 }
 
 
