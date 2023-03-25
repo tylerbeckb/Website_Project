@@ -230,6 +230,7 @@ footer p {
   background-color: whitesmoke;
 }
 
+
 @media only screen and (max-width: 750px) {
   /* Mobile Phones */
 
@@ -265,3 +266,4 @@ footer p {
     left: 40%;
   }
 }
+
