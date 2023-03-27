@@ -55,6 +55,8 @@ function displayQuiz(questionText) {
 
 function scoreCard() {
   startBtn.classList.remove("hide")
+  questionArea.classList.add("hide")
+  scoreElement.classList.remove("hide")
   scoreElement.innerHTML = "Score = " + score
 }
 
