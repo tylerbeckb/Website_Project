@@ -5,6 +5,15 @@ const questionText = [
       { p: "4", correctAns: true },
       { p: "22", correctAns: false },
     ]
+  },
+  {
+    question: "What is 3+3",
+    answers: [
+      { p: "9", correctAns: true},
+      { p: "12", correctAns: false},
+      { p: "13", correctAns: false},
+      { p: "14", correctAns: false},
+    ]
   }
 ]
 
@@ -45,8 +54,14 @@ function displayQuiz(questionText) {
     const newBtn = document.createElement("button")
     newBtn.innerText = ans.p
     newBtn.classList.add("btn")
+    if (ans.correctAns) {
+      newBtn.dataset.correctAns = ans.correctAns
+    }
     newBtn.addEventListener("click", () => {
       ++index
+      if (newBtn.dataset.correctAns) {
+        ++score
+      }
       nextQuestion()
     })
     answers.appendChild(newBtn)
