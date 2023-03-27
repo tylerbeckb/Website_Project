@@ -36,6 +36,10 @@ function displayQuiz(questionText) {
     const newBtn = document.createElement("button")
     newBtn.innerText = ans.p
     newBtn.classList.add("btn")
+    newBtn.addEventListener("click", () => {
+      ++index
+      nextQuestion()
+    })
     answers.appendChild(newBtn)
   });
 
