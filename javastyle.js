@@ -24,10 +24,20 @@ function startFunc() {
 }
 
 function nextQuestion () {
-  displayQuestion(questionText[index])
+  while (answers.firstChild) {
+    answers.removeChild(answers.firstChild)
+  }
+  displayQuiz(questionText[index])
 }
 
-function displayQuestion(question) {
-  questionId.innerHTML = question.question
+function displayQuiz(questionText) {
+  questionId.innerHTML = questionText.question
+  questionText.answers.forEach(ans => {
+    const newBtn = document.createElement("button")
+    newBtn.innerText = ans.p
+    newBtn.classList.add("btn")
+    answers.appendChild(newBtn)
+  });
+
 }
 
