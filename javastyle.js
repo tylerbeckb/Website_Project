@@ -12,14 +12,18 @@ const startBtn = document.getElementById("start")
 const questionArea = document.getElementById("question_area")
 const questionId = document.getElementById("question")
 const answers = document.getElementById("answers")
+const scoreElement = document.getElementById("score_card")
 var index;
+var score;
 
 startBtn.addEventListener("click", startFunc)
 
 function startFunc() {
   startBtn.classList.add("hide")
   questionArea.classList.remove("hide")
+  scoreElement.classList.add("hide")
   index = 0;
+  score = 0;
   nextQuestion()
 }
 
@@ -27,7 +31,12 @@ function nextQuestion () {
   while (answers.firstChild) {
     answers.removeChild(answers.firstChild)
   }
-  displayQuiz(questionText[index])
+  if (index < questionText.length) {
+    displayQuiz(questionText[index])
+  }
+  else {
+    scoreCard()
+  }
 }
 
 function displayQuiz(questionText) {
@@ -42,6 +51,10 @@ function displayQuiz(questionText) {
     })
     answers.appendChild(newBtn)
   });
+}
 
+function scoreCard() {
+  startBtn.classList.remove("hide")
+  scoreElement.innerHTML = "Score = " + score
 }
 
