@@ -28,6 +28,6 @@ function nextQuestion () {
 }
 
 function displayQuestion(question) {
-
+  questionId.innerHTML = question.question
 }
 
