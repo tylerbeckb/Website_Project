@@ -1,6 +1,8 @@
+// Array containing all questions
 const questionText = [
   {
     question: "What is 2+2",
+    // Array containing all answerd
     answers: [
       { p: "4", correctAns: true },
       { p: "22", correctAns: false },
@@ -17,6 +19,7 @@ const questionText = [
   }
 ]
 
+// Creates variables
 const startBtn = document.getElementById("start")
 const questionArea = document.getElementById("question_area")
 const questionId = document.getElementById("question")
@@ -27,6 +30,7 @@ var score;
 
 startBtn.addEventListener("click", startFunc)
 
+// Starts the quiz
 function startFunc() {
   startBtn.classList.add("hide")
   questionArea.classList.remove("hide")
@@ -36,10 +40,13 @@ function startFunc() {
   nextQuestion()
 }
 
+// Checks if new questions to be displayed
 function nextQuestion () {
+  // Removes previous answers
   while (answers.firstChild) {
     answers.removeChild(answers.firstChild)
   }
+  // Checks if there are questions left
   if (index < questionText.length) {
     displayQuiz(questionText[index])
   }
@@ -48,12 +55,17 @@ function nextQuestion () {
   }
 }
 
+// Displays new questions and answers
 function displayQuiz(questionText) {
+  // Displays question
   questionId.innerHTML = questionText.question
+  // Iterate through every answer
   questionText.answers.forEach(ans => {
+    // Creates new button
     const newBtn = document.createElement("button")
     newBtn.innerText = ans.p
     newBtn.classList.add("btn")
+    // Adds the boolean if answer if correct
     if (ans.correctAns) {
       newBtn.dataset.correctAns = ans.correctAns
     }
@@ -68,8 +80,10 @@ function displayQuiz(questionText) {
   });
 }
 
+// Displays final score 
 function scoreCard() {
   startBtn.classList.remove("hide")
+  startBtn.innerHTML = "Play Again"
   questionArea.classList.add("hide")
   scoreElement.classList.remove("hide")
   scoreElement.innerHTML = "Score = " + score
