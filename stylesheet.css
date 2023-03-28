@@ -239,8 +239,12 @@ footer p {
   background-color: bisque;
 }
 
+.quiz_body h1 {
+  font-size: 35px
+}
+
 .container {
-  margin-top: 20%;
+  margin-top: 10%;
   margin-left: 20%;
   background-color: white;
   max-width: 60%;
