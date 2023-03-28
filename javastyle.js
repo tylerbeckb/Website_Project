@@ -1,20 +1,49 @@
 // Array containing all questions
 const questionText = [
   {
-    question: "What is 2+2",
+    question: "What is Reforestation?",
     // Array containing all answerd
     answers: [
-      { p: "4", correctAns: true },
-      { p: "22", correctAns: false },
+      { p: "Act of replanting trees", correctAns: true },
+      { p: "Act of cutting down trees", correctAns: false },
+      { p: "Watering trees", correctAns: false },
+      { p: "Hugging Trees", correctAns: false },
     ]
   },
   {
-    question: "What is 3+3",
+    question: "What does not help stopping deforestation?",
     answers: [
-      { p: "9", correctAns: true},
-      { p: "12", correctAns: false},
-      { p: "13", correctAns: false},
-      { p: "14", correctAns: false},
+      { p: "Donating to charities", correctAns: false},
+      { p: "Recycle", correctAns: false},
+      { p: "Buying palm oil", correctAns: true},
+      { p: "Reduce meat intake", correctAns: false},
+    ]
+  },
+  {
+    question: "What percentage of global deforestation is animal grazing responsible for?",
+    answers: [
+      { p: "18%", correctAns: false},
+      { p: "50%", correctAns: false},
+      { p: "2%", correctAns: false},
+      { p: "14%", correctAns: true},
+    ]
+  },
+  {
+    question: "How many seagrass was restored by the WWF in the UK?",
+    answers: [
+      { p: "10 million", correctAns: false},
+      { p: "1 million", correctAns: false},
+      { p: "1.2 million", correctAns: true},
+      { p: "2 million", correctAns: false},
+    ]
+  },
+  {
+    question: "How many acres of rainforests has Rainforest Trust protected?",
+    answers: [
+      { p: "40 million", correctAns: true},
+      { p: "10 million", correctAns: false},
+      { p: "100 million", correctAns: false},
+      { p: "50 million", correctAns: false},
     ]
   }
 ]
