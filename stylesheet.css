@@ -275,6 +275,16 @@ footer p {
   background-color: blanchedalmond;
 }
 
+.start_btn {
+  margin-top: 5%;
+}
+
+#score_card {
+  font-weight: bold;
+  padding-top: 10%;
+  font-size: 25px;
+}
+
 .hide {
   display: none;
 }
