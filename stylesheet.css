@@ -234,15 +234,17 @@ footer p {
 .quiz_body {
   margin: auto;
   padding: 50px;
-  width: 70%;
   align-items: center;
   text-align: center;
   background-color: bisque;
 }
 
 .container {
-  padding-top: 30%;
+  margin-top: 20%;
+  margin-left: 20%;
   background-color: white;
+  max-width: 60%;
+  min-height: 300px;
   }
 
 .btn_area {
@@ -258,6 +260,8 @@ footer p {
   border-radius: 15px;
   margin-left: 20px;
   margin-top: 35px;
+  margin-bottom: 20px;
+  margin-right: 20px;
   cursor: pointer;
   background-color: bisque;
   border-style: solid;
