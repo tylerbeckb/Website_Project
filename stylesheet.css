@@ -298,17 +298,21 @@ footer p {
   display: none;
 }
 
+.imgContainer {
+  width: 50%;
+}
+
 .imgTopLeft {
-  position: absolute;
+  position: fixed;
   width: 50%;
   height: 50%;
 }
 
 .imgBotLeft {
-  position: absolute;
+  position: fixed;
   width: 50%;
   height: 50%;
-  margin-top: 25%;
+  top: 50%;
 }
 
 @media only screen and (max-width: 850px) {
