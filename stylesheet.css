@@ -307,7 +307,7 @@ footer p {
 .h1TopLeft {
   position: fixed;
   top: calc(25% - 50px);
-  left: calc(25% - 50px);
+  left: calc(25% - 80px);
   color: white;
   font-size: 30px;
 }
@@ -322,7 +322,7 @@ footer p {
 .h1BotLeft {
   position: fixed;
   top: calc(75% - 50px);
-  left: calc(25% - 50px);
+  left: calc(25% - 80px);
   font-size: 30px;
   color: white;
 }
@@ -337,7 +337,7 @@ footer p {
 .h1TopRight {
   position: fixed;
   top: calc(18% - 50px);
-  left: calc(75% - 30px);
+  left: calc(75% - 60px);
   font-size: 30px;
   color: white;
 }
@@ -353,7 +353,7 @@ footer p {
 .h1MiddleRight {
   position: fixed;
   top: calc(52% - 50px);
-  left: calc(75% - 30px);
+  left: calc(75% - 60px);
   font-size: 30px;
   color: white;
 }
@@ -369,7 +369,7 @@ footer p {
 .h1BotRight {
   position: fixed;
   top: calc(86% - 50px);
-  left: calc(75% - 30px);
+  left: calc(75% - 60px);
   font-size: 30px;
   color: white;
 }
