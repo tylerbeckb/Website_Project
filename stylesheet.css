@@ -298,9 +298,17 @@ footer p {
   display: none;
 }
 
-.titleContainer img {
+.imgTopLeft {
+  position: absolute;
   width: 50%;
-  height: auto;
+  height: 50%;
+}
+
+.imgBotLeft {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  margin-top: 25%;
 }
 
 @media only screen and (max-width: 850px) {
