@@ -374,6 +374,10 @@ footer p {
   color: white;
 }
 
+.titleContainer a:hover img{
+  filter: brightness(70%);
+}
+
 @media only screen and (max-width: 850px) {
   /* Mobile Phones */
 
