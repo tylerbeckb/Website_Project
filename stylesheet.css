@@ -315,6 +315,29 @@ footer p {
   top: 50%;
 }
 
+.imgTopRight {
+  position: fixed;
+  width: 50%;
+  height: 33%;
+  left: 50%;
+}
+
+.imgMiddleRight {
+  position: fixed;
+  width: 50%;
+  height: 33%;
+  left: 50%;
+  top: 33%;
+}
+
+.imgBotRight {
+  position: fixed;
+  width: 50%;
+  height: 34%;
+  left: 50%;
+  top: 66%;
+}
+
 @media only screen and (max-width: 850px) {
   /* Mobile Phones */
 
