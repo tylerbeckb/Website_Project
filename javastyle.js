@@ -61,60 +61,64 @@ startBtn.addEventListener("click", startFunc)
 
 // Starts the quiz
 function startFunc() {
-  startBtn.classList.add("hide")
-  questionArea.classList.remove("hide")
-  scoreElement.classList.add("hide")
+  $(document).ready(function() {
+    $("#start").hide();
+    $("#question_area").show();
+    $("#score_card").hide();
+  });
   index = 0;
   score = 0;
-  nextQuestion()
+  nextQuestion();
 }
 
 // Checks if new questions to be displayed
 function nextQuestion () {
   // Removes previous answers
   while (answers.firstChild) {
-    answers.removeChild(answers.firstChild)
+    answers.removeChild(answers.firstChild);
   }
   // Checks if there are questions left
   if (index < questionText.length) {
-    displayQuiz(questionText[index])
+    displayQuiz(questionText[index]);
   }
   else {
-    scoreCard()
+    scoreCard();
   }
 }
 
 // Displays new questions and answers
 function displayQuiz(questionText) {
   // Displays question
-  questionId.innerHTML = questionText.question
+  questionId.innerHTML = questionText.question;
   // Iterate through every answer
   questionText.answers.forEach(ans => {
     // Creates new button
-    const newBtn = document.createElement("button")
-    newBtn.innerText = ans.p
-    newBtn.classList.add("btn")
+    const newBtn = document.createElement("button");
+    newBtn.innerText = ans.p;
+    newBtn.classList.add("btn");
     // Adds the boolean if answer if correct
     if (ans.correctAns) {
-      newBtn.dataset.correctAns = ans.correctAns
+      newBtn.dataset.correctAns = ans.correctAns;
     }
     newBtn.addEventListener("click", () => {
       ++index
       if (newBtn.dataset.correctAns) {
-        ++score
+        ++score;
       }
-      nextQuestion()
+      nextQuestion();
     })
-    answers.appendChild(newBtn)
+    answers.appendChild(newBtn);
   });
 }
 
 // Displays final score 
 function scoreCard() {
-  startBtn.classList.remove("hide")
-  startBtn.innerHTML = "Play Again"
-  questionArea.classList.add("hide")
-  scoreElement.classList.remove("hide")
-  scoreElement.innerHTML = "Score = " + score
+  $(document).ready(function() {
+    $("#start").show();
+    $("#question_area").hide();
+    $("#score_card").show();
+  });
+  startBtn.innerHTML = "Play Again";
+  scoreElement.innerHTML = "Score = " + score;
 }
 
