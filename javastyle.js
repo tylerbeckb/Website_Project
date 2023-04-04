@@ -70,6 +70,7 @@ function startFunc() {
   $(document).ready(function() {
     $("#start").hide();
     $("#question_area").show();
+    $("score_card").hide();
   });
   index = 0;
   score = 0;
