@@ -133,5 +133,7 @@ function home() {
   $(document).ready(function() {
     $(".title").hide();
     $(".title").fadeIn(2000);
+    $(".navigation").hide();
+    $(".navigation").fadeIn(3000);
   });
 };
