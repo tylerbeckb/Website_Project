@@ -48,6 +48,11 @@ const questionText = [
   }
 ]
 
+// Hides score and questions
+$(document).ready(function(){
+  $("#question_area").hide();
+  $("#score_card").hide();
+});
 // Creates variables
 const startBtn = document.getElementById("start")
 const questionArea = document.getElementById("question_area")
@@ -61,10 +66,10 @@ startBtn.addEventListener("click", startFunc)
 
 // Starts the quiz
 function startFunc() {
+  // Displays questions and hides start button
   $(document).ready(function() {
     $("#start").hide();
     $("#question_area").show();
-    $("#score_card").hide();
   });
   index = 0;
   score = 0;
@@ -117,8 +122,8 @@ function scoreCard() {
     $("#start").show();
     $("#question_area").hide();
     $("#score_card").show();
+    $("#score_card").text("Score = " + score);
+    $("#start").text("Play Again")
   });
-  startBtn.innerHTML = "Play Again";
-  scoreElement.innerHTML = "Score = " + score;
 }
 
