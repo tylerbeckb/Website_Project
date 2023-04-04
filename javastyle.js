@@ -55,10 +55,8 @@ $(document).ready(function(){
 });
 // Creates variables
 const startBtn = document.getElementById("start")
-const questionArea = document.getElementById("question_area")
 const questionId = document.getElementById("question")
 const answers = document.getElementById("answers")
-const scoreElement = document.getElementById("score_card")
 var index;
 var score;
 
