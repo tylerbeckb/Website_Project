@@ -132,8 +132,8 @@ function scoreCard() {
 function home() {
   $(document).ready(function() {
     $(".title").hide();
-    $(".title").fadeIn(2000);
+    $(".title").fadeIn(3000);
     $(".navigation").hide();
-    $(".navigation").fadeIn(3000);
+    $(".navigation").delay(2000).fadeIn(2000);
   });
 };
