@@ -129,7 +129,7 @@ function scoreCard() {
 };
 };
 
-function home() {
+function loadFade() {
   $(document).ready(function() {
     $(".title").hide();
     $(".title").fadeIn(3000);
