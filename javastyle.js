@@ -1,3 +1,5 @@
+// For quiz page
+function quiz() {
 // Array containing all questions
 const questionText = [
   {
@@ -124,4 +126,4 @@ function scoreCard() {
     $("#start").text("Play Again")
   });
 }
-
+}
