@@ -70,7 +70,7 @@ function startFunc() {
   $(document).ready(function() {
     $("#start").hide();
     $("#question_area").show();
-    $("score_card").hide();
+    $("#score_card").hide();
   });
   index = 0;
   score = 0;
@@ -124,7 +124,14 @@ function scoreCard() {
     $("#question_area").hide();
     $("#score_card").show();
     $("#score_card").text("Score = " + score);
-    $("#start").text("Play Again")
+    $("#start").text("Play Again");
   });
-}
-}
+};
+};
+
+function home() {
+  $(document).ready(function() {
+    $(".title").hide();
+    $(".title").fadeIn(2000);
+  });
+};
