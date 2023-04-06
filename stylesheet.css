@@ -373,7 +373,7 @@ footer p {
   filter: brightness(70%);
 }
 
-.fadeRight {
+.fade {
   position: relative;
   opacity: 0;
 }
