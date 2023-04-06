@@ -146,6 +146,9 @@ function loadFade() {
           else if($(this).attr("id") == "fadeLeft") {
             $(this).addClass("fadeShowLeft");
           }
+          else {
+            $(this).addClass("fadeShow");
+          }
         }
       });
     });

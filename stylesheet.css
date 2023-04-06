@@ -378,21 +378,27 @@ footer p {
   opacity: 0;
 }
 
-.fadeLeft {
-  position: relative;
-  opacity: 0;
+.fadeShow {
+  opacity: 1;
+  animation: toFade 1.5s 1;
 }
 
 .fadeShowRight {
   opacity: 1;
-  animation: toRight 3s 1;
+  animation: toRight 1.5s 1;
   animation-direction: forwards;
 }
 
 .fadeShowLeft {
   opacity: 1;
-  animation: toLeft 3s 1;
+  animation: toLeft 1.5s 1;
   animation-direction: forwards;
+}
+
+@keyframes toFade {
+  0% {opacity: 40%; bottom: -500px;}
+  50%{opacity: 70%;}
+  100% {opacity: 100%; bottom:0;}
 }
 
 @keyframes toRight {
