@@ -374,10 +374,12 @@ footer p {
 }
 
 .fadeRight {
+  position: relative;
   opacity: 0;
 }
 
 .fadeLeft {
+  position: relative;
   opacity: 0;
 }
 
