@@ -136,12 +136,18 @@ function loadFade() {
     $(".navigation").hide();
     $(".navigation").delay(1000).fadeIn(2000);
     $(window).scroll(function() {
-      $(".fade").each(function(i) {
+      $(".fadeRight").each(function(i) {
         var bot_element = $(this).offset().top + $(this).outerHeight();
         var bot_window = $(window).scrollTop() + $(window).height();
         if( bot_window > bot_element ) {
-          $(this).addClass("fadeShow");
-          $(this).fadeIn(2000);
+          $(this).addClass("fadeShowRight");
+        }
+      });
+      $(".fadeLeft").each(function(i) {
+        var bot_element = $(this).offset().top + $(this).outerHeight();
+        var bot_window = $(window).scrollTop() + $(window).height();
+        if( bot_window > bot_element ) {
+          $(this).addClass("fadeShowLeft");
         }
       });
     });

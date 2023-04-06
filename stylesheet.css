@@ -373,13 +373,23 @@ footer p {
   filter: brightness(70%);
 }
 
-.fade {
+.fadeRight {
   opacity: 0;
 }
 
-.fadeShow {
+.fadeLeft {
+  opacity: 0;
+}
+
+.fadeShowRight {
   opacity: 1;
   animation: toRight 3s 1;
+  animation-direction: forwards;
+}
+
+.fadeShowLeft {
+  opacity: 1;
+  animation: toLeft 3s 1;
   animation-direction: forwards;
 }
 
@@ -387,6 +397,12 @@ footer p {
   0% {opacity: 40%; left: -500px;}
   50%{opacity: 70%;}
   100% {opacity: 100%; left:0;}
+}
+
+@keyframes toLeft {
+  0% {opacity: 40%; right: -500px;}
+  50%{opacity: 70%;}
+  100% {opacity: 100%; right:0;}
 }
 
 @media only screen and (max-width: 850px) {
