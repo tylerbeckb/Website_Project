@@ -375,18 +375,18 @@ footer p {
 
 .fade {
   opacity: 0;
-  transform: all 1s ease;
 }
 
 .fadeShow {
   opacity: 1;
-  animation: myfirst 3s 1;
+  animation: toRight 3s 1;
   animation-direction: forwards;
 }
 
-@keyframes myfirst {
-  0% {left: -500px;}
-  100% {left:0;}
+@keyframes toRight {
+  0% {opacity: 40%; left: -500px;}
+  50%{opacity: 70%;}
+  100% {opacity: 100%; left:0;}
 }
 
 @media only screen and (max-width: 850px) {

@@ -141,8 +141,9 @@ function loadFade() {
         var bot_window = $(window).scrollTop() + $(window).height();
         if( bot_window > bot_element ) {
           $(this).addClass("fadeShow");
+          $(this).fadeIn(2000);
         }
-    });
+      });
     });
   });
 };
