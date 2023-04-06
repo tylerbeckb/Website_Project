@@ -373,13 +373,20 @@ footer p {
   filter: brightness(70%);
 }
 
-.fadeinleft {
+.fade {
   opacity: 0;
-  max-width: 100%;
+  transform: all 1s ease;
 }
 
-.active {
+.fadeShow {
   opacity: 1;
+  animation: myfirst 3s 1;
+  animation-direction: forwards;
+}
+
+@keyframes myfirst {
+  0% {left: -500px;}
+  100% {left:0;}
 }
 
 @media only screen and (max-width: 850px) {

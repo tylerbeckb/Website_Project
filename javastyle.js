@@ -135,13 +135,13 @@ function loadFade() {
     $(".title").fadeIn(2000);
     $(".navigation").hide();
     $(".navigation").delay(1000).fadeIn(2000);
-    $(window).scroll(function(){
-      $(".fadeinleft").each(function(i){
-      var bottom_of_element = $(this).offset().top + $(this).outerHeight();
-      var bottom_of_window = $(window).scrollTop() + $(window).height();
-      if( bottom_of_window > bottom_of_element ){
-        $(this).addClass("active");
-      }
+    $(window).scroll(function() {
+      $(".fade").each(function(i) {
+        var bot_element = $(this).offset().top + $(this).outerHeight();
+        var bot_window = $(window).scrollTop() + $(window).height();
+        if( bot_window > bot_element ) {
+          $(this).addClass("fadeShow");
+        }
     });
     });
   });
