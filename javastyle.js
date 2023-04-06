@@ -132,8 +132,17 @@ function scoreCard() {
 function loadFade() {
   $(document).ready(function() {
     $(".title").hide();
-    $(".title").fadeIn(3000);
+    $(".title").fadeIn(2000);
     $(".navigation").hide();
-    $(".navigation").delay(2000).fadeIn(2000);
+    $(".navigation").delay(1000).fadeIn(2000);
+    $(window).scroll(function(){
+      $(".fadeinleft").each(function(i){
+      var bottom_of_element = $(this).offset().top + $(this).outerHeight();
+      var bottom_of_window = $(window).scrollTop() + $(window).height();
+      if( bottom_of_window > bottom_of_element ){
+        $(this).addClass("active");
+      }
+    });
+    });
   });
 };

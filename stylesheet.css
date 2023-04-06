@@ -71,7 +71,7 @@ h2 {
 
 .title {
   position: absolute; 
-  top: calc(50% - 50px);
+  top: calc(45% - 50px);
   left: 0;
   text-align: center; 
   width: 100%; 
@@ -371,6 +371,15 @@ footer p {
 
 .titleContainer a:hover img{
   filter: brightness(70%);
+}
+
+.fadeinleft {
+  opacity: 0;
+  max-width: 100%;
+}
+
+.active {
+  opacity: 1;
 }
 
 @media only screen and (max-width: 850px) {
