@@ -55,6 +55,7 @@ $(document).ready(function(){
   $("#question_area").hide();
   $("#score_card").hide();
   $("#form").hide();
+  $("#leaderboard").hide();
 });
 // Creates variables
 const startBtn = document.getElementById("start");
@@ -72,6 +73,7 @@ function startFunc() {
     $("#start").hide();
     $("#question_area").show();
     $("#score_card").hide();
+    $("#leaderboard").hide();
   });
   index = 0;
   score = 0;
@@ -123,7 +125,7 @@ function scoreCard() {
   $(document).ready(function() {
     $("#form").show();
     $("#submit").click(function(){
-      leaderBoard();
+      leaderboard();
     });
     $("#question_area").hide();
     $("#score_card").show();
@@ -131,12 +133,13 @@ function scoreCard() {
   });
 };
 
-function leaderBoard() {
+function leaderboard() {
   $(document).ready(function() {
     $("#start").show();
     $("#start").text("Play Again");
     $("#form").hide();
     $("#score_card").hide();
+    $("#leaderboard").show();
     var input = document.getElementById("form");
     var firstName = input.elements[0].value;
     var lastName = input.elements[1].value;
