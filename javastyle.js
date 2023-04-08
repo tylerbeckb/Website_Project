@@ -54,15 +54,16 @@ const questionText = [
 $(document).ready(function(){
   $("#question_area").hide();
   $("#score_card").hide();
+  $("#form").hide();
 });
 // Creates variables
-const startBtn = document.getElementById("start")
-const questionId = document.getElementById("question")
-const answers = document.getElementById("answers")
+const startBtn = document.getElementById("start");
+const questionId = document.getElementById("question");
+const answers = document.getElementById("answers");
 var index;
 var score;
 
-startBtn.addEventListener("click", startFunc)
+startBtn.addEventListener("click", startFunc);
 
 // Starts the quiz
 function startFunc() {
@@ -120,13 +121,28 @@ function displayQuiz(questionText) {
 // Displays final score 
 function scoreCard() {
   $(document).ready(function() {
-    $("#start").show();
+    $("#form").show();
+    $("#submit").click(function(){
+      leaderBoard();
+    });
     $("#question_area").hide();
     $("#score_card").show();
     $("#score_card").text("Score = " + score);
-    $("#start").text("Play Again");
   });
 };
+
+function leaderBoard() {
+  $(document).ready(function() {
+    $("#start").show();
+    $("#start").text("Play Again");
+    $("#form").hide();
+    $("#score_card").hide();
+    var input = document.getElementById("form");
+    var firstName = input.elements[0].value;
+    var lastName = input.elements[1].value;
+    alert(firstName);
+  });
+}
 };
 
 function loadFade() {
