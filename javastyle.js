@@ -143,7 +143,19 @@ function leaderboard() {
     var input = document.getElementById("form");
     var firstName = input.elements[0].value;
     var lastName = input.elements[1].value;
-    alert(firstName);
+    // Checks if user should be on the leaderboard
+    if (parseInt(document.getElementById("1").getAttribute("value")) <= score) {
+      $("#1").text(firstName + " " + lastName + " - " + score);
+      $("#1").value = score;
+    }
+    else if(parseInt(document.getElementById("2").getAttribute("value")) <= score) {
+      $("#2").text(firstName + " " + lastName + " - " + score);
+      $("#2").value = score;
+    }
+    else if(parseInt(document.getElementById("3").getAttribute("value")) <= score) {
+      $("#3").text(firstName + " " + lastName + " - " + score);
+      $("#3").value = score;
+    }
   });
 }
 };
