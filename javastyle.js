@@ -71,6 +71,7 @@ startBtn.addEventListener("click", startFunc);
 
 // Starts the quiz
 function startFunc() {
+  progressWidth = -20;
   // Displays questions and hides start button
   $(document).ready(function() {
     $("#start").hide();
