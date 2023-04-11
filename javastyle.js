@@ -133,18 +133,22 @@ function scoreCard() {
   });
 };
 
-function leaderboard() {
+// Displays and updates leaderboard
+function leaderboard() { 
   $(document).ready(function() {
+    // Shows or hides objects
     $("#start").show();
     $("#start").text("Play Again");
     $("#form").hide();
     $("#score_card").hide();
     $("#leaderboard").show();
+    // Gets values from form
     var input = document.getElementById("form");
     var firstName = input.elements[0].value;
     var lastName = input.elements[1].value;
     // Checks if user should be on the leaderboard
     if (parseInt(document.getElementById("1").getAttribute("value")) <= score) {
+      // Updates leaderboard
       $("#1").text(firstName + " " + lastName + " - " + score);
       $("#1").value = score;
     }
@@ -162,15 +166,19 @@ function leaderboard() {
 
 function loadFade() {
   $(document).ready(function() {
+    // Fades in the title and navbar
     $(".title").hide();
     $(".title").fadeIn(2000);
     $(".navigation").hide();
     $(".navigation").delay(1000).fadeIn(2000);
+    // Fades elements in when scrolling
     $(window).scroll(function() {
-      $(".fade").each(function(i) {
+      $(".fade").each(function() {
+        // Calculates postion
         var bot_element = $(this).offset().top ;
         var bot_window = $(window).scrollTop() + $(window).height();
         if( bot_window > bot_element ) {
+          // Checks what animation to use
           if($(this).attr("id") == "fadeRight") {
             $(this).addClass("fadeShowRight");
           }
