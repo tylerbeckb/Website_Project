@@ -1,5 +1,7 @@
 // For quiz page
 function quiz() {
+
+  var progressWidth = -20;
 // Array containing all questions
 const questionText = [
   {
@@ -56,6 +58,7 @@ $(document).ready(function(){
   $("#score_card").hide();
   $("#form").hide();
   $("#leaderboard").hide();
+  $(".progress-bar").css("width", progressWidth + "%");
 });
 // Creates variables
 const startBtn = document.getElementById("start");
@@ -82,6 +85,9 @@ function startFunc() {
 
 // Checks if new questions to be displayed
 function nextQuestion () {
+  progressWidth += 20;
+  $(".progress-bar").css("width", progressWidth + "%");
+  $(".progress-bar").text(progressWidth + "%");
   // Removes previous answers
   while (answers.firstChild) {
     answers.removeChild(answers.firstChild);
