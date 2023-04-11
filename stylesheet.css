@@ -395,6 +395,9 @@ footer p {
   animation-direction: forwards;
 }
 
+.progress_style {
+  padding-bottom: 3%;
+}
 
 @keyframes toFade {
   0% {opacity: 40%; bottom: -500px;}
