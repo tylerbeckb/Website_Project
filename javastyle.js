@@ -213,9 +213,12 @@ function geolocation() {
     document.getElementById("location") = "Geolocation is not supported";
   }
 
-  // Displays the coorindates
+  // Displays the coordinates
   function showPosition(position) {
-    document.getElementById("location").innerHTML = "<p>Latitude: " + position.coords.latitude + "</p>" +
-      "<p>Longitude: " + position.coords.longitude + "</p>";
-  }
-}
+    if (position.coords.latitude >= 49 && position.coords.latitude <= 59 
+      && position.coords.longitude <= 2 && position.coords.longitude >= -8) {
+      document.getElementById("location").innerHTML = "<p>Latitude: " + position.coords.latitude + "</p>" +
+        "<p>Longitude: " + position.coords.longitude + "</p>";
+      }; 
+  };
+};
