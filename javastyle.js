@@ -71,7 +71,6 @@ startBtn.addEventListener("click", startFunc);
 
 // Starts the quiz
 function startFunc() {
-  progressWidth = -20;
   // Displays questions and hides start button
   $(document).ready(function() {
     $("#start").hide();
@@ -79,6 +78,7 @@ function startFunc() {
     $("#score_card").hide();
     $("#leaderboard").hide();
   });
+  progressWidth = -20;
   index = 0;
   score = 0;
   nextQuestion();
@@ -87,7 +87,7 @@ function startFunc() {
 // Checks if new questions to be displayed
 function nextQuestion () {
   progressWidth += 20;
-  $(".progress-bar").css("width", progressWidth + "%");
+  $(".progress-bar").css("width", progressWidth+ "%");
   $(".progress-bar").text(progressWidth + "%");
   // Removes previous answers
   while (answers.firstChild) {
@@ -120,6 +120,8 @@ function displayQuiz(questionText) {
       ++index
       if (newBtn.dataset.correctAns) {
         ++score;
+      }
+      else {
       }
       nextQuestion();
     })
