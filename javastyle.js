@@ -151,15 +151,35 @@ function quiz() {
       $("#form").hide();
       $("#score_card").hide();
       $("#leaderboard").show();
+
+      if (typeof(Storage) !== "undefined") {
+        if (!localStorage.oneValue || !localStorage.oneName) {
+          localStorage.oneValue = 5;
+          localStorage.oneName = "Weldon Truman";
+        }
+      }
       // Gets values from form
       var input = document.getElementById("form");
       var firstName = input.elements[0].value;
       var lastName = input.elements[1].value;
       // Checks if user should be on the leaderboard
-      if (parseInt(document.getElementById("1").getAttribute("value")) <= score) {
+      if (parseInt(localStorage.oneValue) < score) {
         // Updates leaderboard
-        $("#1").text(firstName + " " + lastName + " - " + score);
-        $("#1").value = score;
+        if (typeof(Storage) !== "undefined") {
+          if (localStorage.oneValue) {
+            localStorage.oneValue = score;
+          }
+          else {
+            localStorage.oneValue = 5;
+          }
+          if (localStorage.oneName) {
+            localStorage.oneName = firstName + " " + lastName;
+          }
+          else {
+            localStorage.oneName = "Weldon Truman";
+          }
+        }
+        $("#1").text(localStorage.oneName + " - " + localStorage.oneValue);
       }
       else if(parseInt(document.getElementById("2").getAttribute("value")) <= score) {
         $("#2").text(firstName + " " + lastName + " - " + score);
@@ -215,6 +235,7 @@ function geolocation() {
 
   // Displays the coordinates
   function showPosition(position) {
+    // Displays coordinates only if user is in the uk
     if (position.coords.latitude >= 49 && position.coords.latitude <= 59 
       && position.coords.longitude <= 2 && position.coords.longitude >= -8) {
       document.getElementById("location").innerHTML = "<p>Latitude: " + position.coords.latitude + "</p>" +
