@@ -203,7 +203,9 @@ function loadFade() {
   });
 };
 
+// Displays location
 function geolocation() {
+  // Checks if geolocation is supported
   if(navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(showPosition);
   }
@@ -211,6 +213,7 @@ function geolocation() {
     document.getElementById("location") = "Geolocation is not supported";
   }
 
+  // Displays the coorindates
   function showPosition(position) {
     document.getElementById("location").innerHTML = "<p>Latitude: " + position.coords.latitude + "</p>" +
       "<p>Longitude: " + position.coords.longitude + "</p>";
