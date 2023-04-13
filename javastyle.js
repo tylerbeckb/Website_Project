@@ -153,7 +153,10 @@ function quiz() {
       $("#leaderboard").show();
 
       if (typeof(Storage) !== "undefined") {
-        if (!localStorage.oneValue || !localStorage.oneName) {
+        if (localStorage.oneValue && localStorage.oneName) {
+          $("#1").text(localStorage.oneName + " - " + localStorage.oneValue);
+        }
+        else {
           localStorage.oneValue = 5;
           localStorage.oneName = "Weldon Truman";
         }
