@@ -254,7 +254,7 @@ footer p {
   display: inline-block;
 }
 
-.btn {
+.quiz_btn {
   text-decoration: none;
   padding: 20px;
   font-weight: bold;
@@ -271,7 +271,7 @@ footer p {
   border-color:blanchedalmond;
 }
 
-.btn:hover {
+.quiz_btn:hover {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);

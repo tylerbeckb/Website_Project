@@ -111,7 +111,7 @@ function quiz() {
       // Creates new button
       const newBtn = document.createElement("button");
       newBtn.innerText = ans.p;
-      newBtn.classList.add("btn");
+      newBtn.classList.add("quiz_btn");
       // Adds the boolean if answer if correct
       if (ans.correctAns) {
         newBtn.dataset.correctAns = ans.correctAns;
