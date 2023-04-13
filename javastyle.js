@@ -152,7 +152,9 @@ function quiz() {
       $("#score_card").hide();
       $("#leaderboard").show();
 
+      // Checks if browser can use local storage
       if (typeof(Storage) !== "undefined") {
+        // Resests data is they aren't defined
         if (localStorage.oneValue && localStorage.oneName) {
           $("#1").text(localStorage.oneName + " - " + localStorage.oneValue);
         }
@@ -160,37 +162,49 @@ function quiz() {
           localStorage.oneValue = 5;
           localStorage.oneName = "Weldon Truman";
         }
+        if (localStorage.twoValue && localStorage.twoName) {
+          $("#2").text(localStorage.twoName + " - " + localStorage.twoValue);
+        }
+        else {
+          localStorage.twoValue = 4;
+          localStorage.twoName = "Prosper Winston";
+        }
+        if (localStorage.threeValue && localStorage.threeName) {
+          $("#3").text(localStorage.threeName + " - " + localStorage.threeValue);
+        }
+        else {
+          localStorage.threeValue = 3;
+          localStorage.threeName = "Darion Earl";
+        }
+      }
+      // Error message
+      else {
+        $("#leaderboard").text("local storage not available");
+        return;
       }
       // Gets values from form
       var input = document.getElementById("form");
       var firstName = input.elements[0].value;
       var lastName = input.elements[1].value;
       // Checks if user should be on the leaderboard
-      if (parseInt(localStorage.oneValue) < score) {
+      if (parseInt(localStorage.oneValue) <= score) {
         // Updates leaderboard
-        if (typeof(Storage) !== "undefined") {
-          if (localStorage.oneValue) {
-            localStorage.oneValue = score;
-          }
-          else {
-            localStorage.oneValue = 5;
-          }
-          if (localStorage.oneName) {
-            localStorage.oneName = firstName + " " + lastName;
-          }
-          else {
-            localStorage.oneName = "Weldon Truman";
-          }
-        }
+        localStorage.oneValue = score;
+        localStorage.oneName = firstName + " " + lastName;
         $("#1").text(localStorage.oneName + " - " + localStorage.oneValue);
+        return;
       }
-      else if(parseInt(document.getElementById("2").getAttribute("value")) <= score) {
-        $("#2").text(firstName + " " + lastName + " - " + score);
-        $("#2").value = score;
+      else if(parseInt(localStorage.twoValue) <= score) {
+        localStorage.twoValue = score;
+        localStorage.twoName = firstName + " " + lastName;
+        $("#2").text(localStorage.twoName + " - " + localStorage.twoValue);
+        return;
       }
-      else if(parseInt(document.getElementById("3").getAttribute("value")) <= score) {
-        $("#3").text(firstName + " " + lastName + " - " + score);
-        $("#3").value = score;
+      else if(parseInt(localStorage.threeValue) <= score) {
+        localStorage.threeValue = score;
+        localStorage.threeName = firstName + " " + lastName;
+        $("#3").text(localStorage.threeName + " - " + localStorage.threeValue);
+        return;
       }
     });
   }
