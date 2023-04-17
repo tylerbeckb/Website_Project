@@ -260,3 +260,16 @@ function geolocation() {
       }; 
   };
 };
+
+function getDistance (lat1, lon1, lat2, lon2) {
+  var radianLat1 = Math.PI * lat1/180;
+  var radianLat2 = Math.PI * lat2/180;
+  var longDiff = lon1 - lon2;
+  var radianlongDiff = Math.PI * longDiff/180;
+  var distance = Math.sin(radianLat1) * Math.sin(radianLat2) + Math.cos(radianLat1) * Math.cos(radianLat2) * Math.cos(radianlongDiff);
+  distance = Math.acos(distance);
+  distance = distance * 180/Math.PI;
+  distance = dist * 60 * 1.1515;
+  distance = distance * 1.609344;
+  return distance;
+}
