@@ -1,13 +1,44 @@
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="stylesheet.css" >
   <title>Geolocation</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" ></script>
   <script defer src="javastyle.js"></script>
 </head>
-<body>
+<body onload="slide()">
+  <!--Navigation bar-->
+  <nav class="navigation">
+    <a href="home.html">Home</a>
+    <a href="uk_situation.html">UK Situation</a>
+    <a href="help.html">How to Help</a>
+    <a href="news.html">Latest News</a>
+    <a href="charity.html">Charites</a>
+    <a href="quiz.html">Quiz</a>
+  </nav>
+  <!--Title-->
+  <header class="large_background">
+    <figure>
+      <img src="Images/buring_forest_background.jpg" alt="Forest with rising fog">
+      <figcaption class="reference">(Pixabay.n/d)</figcaption>
+      <div class="title">
+        <figcaption><h1>Geolocation</h1></figcaption>
+        <figcaption>____________________________</figcaption>
+      </div>
+    </figure>
+  </header>
   <button onclick="geolocation()">Geolocation</button>
+  <button onclick="slideAll()">Show All</button>
   <p id="location"></p>
+  <section id="indo">
+    <h2>Sumatra Rainforest</h1>
+  </section>
+  <section id="amazon">
+    <h2>Amazon Rainforest</h2>
+  </section>
+  <section id="congo">
+    <h2>Congo Rainforest</h2>
+  </section>
 </body>
 </html>

@@ -263,6 +263,7 @@ function geolocation() {
   };
 };
 
+// Calculates distance between 2 points
 function getDistance(lat1, lon1, lat2, lon2) {
   var radianLat1 = radians(lat1);
   var radianLat2 = radians(lat2);
@@ -285,12 +286,30 @@ function getNearest(position) {
   var distance3 = getDistance(position.coords.latitude, position.coords.longitude, -1.75, 102.75);
 
   if (distance1 > distance2 && distance1 > distance3) {
-    alert("amazon");
+    $("#amazon").slideDown();
   }
   else if (distance2 > distance1 && distance2 > distance3) {
-    alert("congo");
+    $("#congo").slideDown();
   }
   else {
-    alert("indo");
+    $(document).ready(function() {
+      $("#indo").slideDown();
+    })
   }
+}
+
+function slide() {
+  $(document).ready(function(){
+    $("#indo").slideUp();
+    $("#amazon").slideUp();
+    $("#congo").slideUp();
+  })
+}
+
+function slideAll() {
+  $(document).ready(function(){
+    $("#indo").slideDown();
+    $("#amazon").slideDown();
+    $("#congo").slideDown();
+  })
 }
