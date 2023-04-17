@@ -244,7 +244,7 @@ function loadFade() {
 function geolocation() {
   // Checks if geolocation is supported
   if(navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(showPosition);
+    navigator.geolocation.getCurrentPosition(getNearest);
   }
   else {
     document.getElementById("location") = "Geolocation is not supported";
@@ -257,19 +257,40 @@ function geolocation() {
       && position.coords.longitude <= 2 && position.coords.longitude >= -8) {
       document.getElementById("location").innerHTML = "<p>Latitude: " + position.coords.latitude + "</p>" +
         "<p>Longitude: " + position.coords.longitude + "</p>";
+        var distance1 = getDistance(position.coords.latitude, position.coords.longitude, -3.4653, -62.2159);
+        alert(distance1);
       }; 
   };
 };
 
-function getDistance (lat1, lon1, lat2, lon2) {
-  var radianLat1 = Math.PI * lat1/180;
-  var radianLat2 = Math.PI * lat2/180;
+function getDistance(lat1, lon1, lat2, lon2) {
+  var radianLat1 = radians(lat1);
+  var radianLat2 = radians(lat2);
   var longDiff = lon1 - lon2;
-  var radianlongDiff = Math.PI * longDiff/180;
+  var radianlongDiff = radians(longDiff)
   var distance = Math.sin(radianLat1) * Math.sin(radianLat2) + Math.cos(radianLat1) * Math.cos(radianLat2) * Math.cos(radianlongDiff);
   distance = Math.acos(distance);
   distance = distance * 180/Math.PI;
-  distance = dist * 60 * 1.1515;
-  distance = distance * 1.609344;
+  distance = distance * 60 * 1.1515 * 1.609344;
   return distance;
+}
+
+function radians(value) {
+  return Math.PI * (value/180)
+}
+
+function getNearest(position) {
+  var distance1 = getDistance(position.coords.latitude, position.coords.longitude, -3.4653, -62.2159);
+  var distance2 = getDistance(position.coords.latitude, position.coords.longitude, -5.9175, 12.5484);
+  var distance3 = getDistance(position.coords.latitude, position.coords.longitude, -1.75, 102.75);
+
+  if (distance1 > distance2 && distance1 > distance3) {
+    alert("amazon");
+  }
+  else if (distance2 > distance1 && distance2 > distance3) {
+    alert("congo");
+  }
+  else {
+    alert("indo");
+  }
 }
