@@ -399,6 +399,27 @@ footer p {
   padding-bottom: 3%;
 }
 
+.geo_btn {
+  text-decoration: none;
+  padding: 20px;
+  font-weight: bold;
+  width: 200px;
+  text-align: center;
+  border-radius: 15px;
+  cursor: pointer;
+  background-color: rgb(89, 193, 89);
+  border-style: solid;
+  border-color: darkgreen;
+}
+
+.geo_btn:hover {
+  transition: ease-in 0.1s;
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  background-color: darkgreen;
+}
+
 @keyframes toFade {
   0% {opacity: 40%; bottom: -500px;}
   50%{opacity: 70%;}
