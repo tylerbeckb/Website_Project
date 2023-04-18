@@ -422,6 +422,27 @@ footer p {
   background-color: darkgreen;
 }
 
+#indo {
+  background-color: black;
+  color: white;
+}
+
+#indo h2 {
+  padding-left: 30px;
+}
+
+.geo_img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+
+.circle_tile {
+  width: 100%;
+  padding-left: 30px;
+  padding-bottom: 50px;
+}
+
 @keyframes toFade {
   0% {opacity: 40%; bottom: -500px;}
   50%{opacity: 70%;}
