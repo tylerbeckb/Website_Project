@@ -410,6 +410,8 @@ footer p {
   background-color: rgb(89, 193, 89);
   border-style: solid;
   border-color: darkgreen;
+  margin-left: 50px;
+  margin-top: 50px;
 }
 
 .geo_btn:hover {
@@ -471,6 +473,12 @@ footer p {
 
   .right_btn {
     left: 40%;
+  }
+
+  .geo_btn {
+    width: 150px;
+    margin-left: 25px;
+    margin-top: 25px;
   }
 }
 
