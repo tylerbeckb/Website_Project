@@ -428,7 +428,8 @@ footer p {
 }
 
 #indo h2 {
-  padding-left: 30px;
+  margin-left: 30px;
+  margin-top: 5%;
 }
 
 .geo_img {
@@ -508,6 +509,11 @@ footer p {
     width: 150px;
     margin-left: 25px;
     margin-top: 25px;
+  }
+
+  .circle_canvas {
+    height: auto;
+    width: 100%;
   }
 }
 
