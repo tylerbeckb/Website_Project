@@ -292,9 +292,8 @@ function getNearest(position) {
     $("#congo").slideDown();
   }
   else {
-    $(document).ready(function() {
-      $("#indo").slideDown();
-    })
+    $("#indo").slideDown();
+    displayCircle();
   }
 }
 
@@ -313,13 +312,13 @@ function slideAll() {
     $("#congo").slideDown();
     displayCircle();
   })
+}
 
-  function displayCircle() {
-    var c = document.getElementById("circle_info");
-    var ctx = c.getContext("2d");
-    ctx.beginPath();
-    ctx.arc(150, 75, 70, 0, 2 * Math.PI);
-    ctx.fillStyle = "orange";
-    ctx.fill();
-  }
+function displayCircle() {
+  var c = document.getElementById("circle_info");
+  var ctx = c.getContext("2d");
+  ctx.beginPath();
+  ctx.arc(150, 75, 70, 0, 2 * Math.PI);
+  ctx.fillStyle = "orange";
+  ctx.fill();
 }
