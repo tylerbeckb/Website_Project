@@ -310,15 +310,30 @@ function slideAll() {
     $("#indo").slideDown();
     $("#amazon").slideDown();
     $("#congo").slideDown();
-    displayCircle();
+    displayCircle("red");
   })
 }
 
-function displayCircle() {
+// Draws circle on canvas
+function displayCircle(color) {
   var c = document.getElementById("circle_info");
   var ctx = c.getContext("2d");
   ctx.beginPath();
   ctx.arc(150, 75, 70, 0, 2 * Math.PI);
-  ctx.fillStyle = "orange";
+  ctx.fillStyle = color;
   ctx.fill();
+}
+
+// Display orangutan facts
+function displayOrang() {
+  var c = document.getElementById("circle_info");
+  var ctx = c.getContext("2d");
+  ctx.beginPath();
+  ctx.font = "13px serif"
+  ctx.fillStyle = "black";
+  ctx.fillText ("Critically Endangered", 95, 50);
+  ctx.fillText ("Sumatran orangutans", 95, 70);
+  ctx.fillText ("only 14,000 left", 95, 85);
+  ctx.fillText ("Bornean orangutans", 95, 105);
+  ctx.fillText ("only 105,000 left", 100, 120);
 }
