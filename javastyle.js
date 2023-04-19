@@ -293,7 +293,11 @@ function getNearest(position) {
   }
   else {
     $("#indo").slideDown();
-    displayCircle();
+    // Displays circle for orang on hover
+    $("#orang").hover(function(){
+      displayCircle("red"); displayOrang(); }
+      ,function(){displayCircle("black")
+    })
   }
 }
 
