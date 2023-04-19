@@ -311,5 +311,15 @@ function slideAll() {
     $("#indo").slideDown();
     $("#amazon").slideDown();
     $("#congo").slideDown();
+    displayCircle();
   })
+
+  function displayCircle() {
+    var c = document.getElementById("circle_info");
+    var ctx = c.getContext("2d");
+    ctx.beginPath();
+    ctx.arc(150, 75, 70, 0, 2 * Math.PI);
+    ctx.fillStyle = "orange";
+    ctx.fill();
+  }
 }

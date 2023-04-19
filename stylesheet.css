@@ -435,12 +435,20 @@ footer p {
   border-radius: 50%;
   width: 150px;
   height: 150px;
+  margin-right: 100px;
+  float: left;
 }
 
 .circle_tile {
   width: 100%;
-  padding-left: 30px;
+  padding-left: 70px;
   padding-bottom: 50px;
+}
+
+.circle_canvas {
+  height: auto;
+  width: 35%;
+  margin-top: 10%;
 }
 
 @keyframes toFade {
