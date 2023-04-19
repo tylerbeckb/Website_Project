@@ -427,6 +427,11 @@ footer p {
   color: white;
 }
 
+#amazon {
+  background-color: green;
+  color: white;
+}
+
 #indo h2 {
   margin-left: 30px;
   margin-top: 5%;
