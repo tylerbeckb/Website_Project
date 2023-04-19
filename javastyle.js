@@ -280,11 +280,14 @@ function radians(value) {
   return Math.PI * (value/180)
 }
 
+// Calculates closest of 3 rainforests and displays that informaion
 function getNearest(position) {
+  // Works out the distances
   var distance1 = getDistance(position.coords.latitude, position.coords.longitude, -3.4653, -62.2159);
   var distance2 = getDistance(position.coords.latitude, position.coords.longitude, -5.9175, 12.5484);
   var distance3 = getDistance(position.coords.latitude, position.coords.longitude, -1.75, 102.75);
 
+  // Sees what one is closer
   if (distance1 > distance2 && distance1 > distance3) {
     $("#amazon").slideDown();
   }
@@ -297,25 +300,51 @@ function getNearest(position) {
     $("#orang").hover(function(){
       displayCircle("red"); displayOrang(); }
       ,function(){displayCircle("black")
-    })
+    });
+    // Displays circle for elephant on hover
+    $("#ele").hover(function(){
+      displayCircle("red"); displayEle(); }
+      ,function(){ displayCircle("black");
+    });
+    // Displays circle for rhino on hover
+    $("#rhino").hover(function(){
+      displayCircle("red"); displayRhino(); }
+      ,function(){ displayCircle("black");
+    });
   }
 }
 
+// Resets page on load
 function slide() {
   $(document).ready(function(){
     $("#indo").slideUp();
     $("#amazon").slideUp();
     $("#congo").slideUp();
-  })
+  });
 }
 
+// Displays all information
 function slideAll() {
   $(document).ready(function(){
     $("#indo").slideDown();
     $("#amazon").slideDown();
     $("#congo").slideDown();
-    displayCircle("red");
-  })
+    // Displays circle for orang on hover
+    $("#orang").hover(function(){
+      displayCircle("red"); displayOrang(); }
+      ,function(){ displayCircle("black");
+    });
+    // Displays circle for elephant on hover
+    $("#ele").hover(function(){
+      displayCircle("red"); displayEle(); }
+      ,function(){ displayCircle("black");
+    });
+    // Displays circle for rhino on hover
+    $("#rhino").hover(function(){
+      displayCircle("red"); displayRhino(); }
+      ,function(){ displayCircle("black");
+    });
+  });
 }
 
 // Draws circle on canvas
@@ -340,4 +369,30 @@ function displayOrang() {
   ctx.fillText ("only 14,000 left", 95, 85);
   ctx.fillText ("Bornean orangutans", 95, 105);
   ctx.fillText ("only 105,000 left", 100, 120);
+}
+
+// Displays elephant facts
+function displayEle() {
+  var c = document.getElementById("circle_info");
+  var ctx = c.getContext("2d");
+  ctx.beginPath();
+  ctx.font = "13px serif"
+  ctx.fillStyle = "black";
+  ctx.fillText ("Critically Endangered", 95, 50);
+  ctx.fillText ("Sumatran elephants", 95, 70);
+  ctx.fillText ("only 2,800 left", 95, 85);
+  ctx.fillText ("Bornean elephants", 95, 105);
+  ctx.fillText ("only 1,500 left", 100, 120);
+}
+
+// Displays rhino facts
+function displayRhino() {
+  var c = document.getElementById("circle_info");
+  var ctx = c.getContext("2d");
+  ctx.beginPath();
+  ctx.font = "13px serif"
+  ctx.fillStyle = "black";
+  ctx.fillText ("Critically Endangered", 95, 50);
+  ctx.fillText ("Sumatran rhino", 95, 70);
+  ctx.fillText ("only 80 left", 95, 85);
 }
