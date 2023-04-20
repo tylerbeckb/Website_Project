@@ -249,18 +249,6 @@ function geolocation() {
   else {
     document.getElementById("location") = "Geolocation is not supported";
   }
-
-  // Displays the coordinates
-  function showPosition(position) {
-    // Displays coordinates only if user is in the uk
-    if (position.coords.latitude >= 49 && position.coords.latitude <= 59 
-      && position.coords.longitude <= 2 && position.coords.longitude >= -8) {
-      document.getElementById("location").innerHTML = "<p>Latitude: " + position.coords.latitude + "</p>" +
-        "<p>Longitude: " + position.coords.longitude + "</p>";
-        var distance1 = getDistance(position.coords.latitude, position.coords.longitude, -3.4653, -62.2159);
-        alert(distance1);
-      }; 
-  };
 };
 
 // Calculates distance between 2 points
@@ -343,6 +331,9 @@ function slideAll() {
     $("#rhino").hover(function(){
       displayCircle("red"); displayRhino(); }
       ,function(){ displayCircle("black");
+    });
+    $("#jag").hover(function(){
+      $(".box40").addClass("fadeShowLeft");
     });
   });
 }
