@@ -497,11 +497,17 @@ footer p {
   width: 20%;
 	height: 10%;
 	transform: skew(20deg);
-	background: aqua;
+	background-color: aqua;
   padding: 2%;
   text-align: center;
   float: right;
   margin-right: 5%;
+}
+
+.para_transition {
+  transition: ease-in 0.5s;
+  padding: 1.2%;
+  background-color:aquamarine;
 }
 
 #congo {
