@@ -355,7 +355,11 @@ function slideAll() {
     });
     $(".reveal_oval").click(function(){
       $(".reveal_oval").text("50% has been allocated for logging");
-      $(".reveal_oval").addClass("oval_transition")
+      $(".reveal_oval").addClass("oval_transition");
+    });
+    $(".reveal_para").click(function(){
+      $(".reveal_para").text("Only place which has all subspecies of gorillas");
+      $(".reveal_para").addClass("para_transition");
     });
   });
 }
