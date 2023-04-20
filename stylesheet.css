@@ -395,6 +395,12 @@ footer p {
   animation-direction: forwards;
 }
 
+.fadeRevereLeft {
+  opacity: 1;
+  animation: reverseLeft 1.5s 1;
+  animation-direction: forwards;
+}
+
 .progress_style {
   padding-bottom: 3%;
 }
@@ -459,10 +465,19 @@ footer p {
 }
 
 .box40 {
-  background-color:darkorange;
   width: 40%;
   padding: 25px;
 }
+
+.orangeBack {
+  background-color: darkorange;
+}
+
+.blueBack {
+  background-color: blue;
+  float: right;
+}
+
 
 @keyframes toFade {
   0% {opacity: 40%; bottom: -500px;}
