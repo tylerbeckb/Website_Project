@@ -478,6 +478,18 @@ footer p {
   float: right;
 }
 
+.reveal_oval {
+  padding: 3%;
+  height: 15%;
+  width: 20%;
+  background-color: orange;
+  border-radius: 50%;
+  text-align: center;
+} 
+
+#congo {
+  background-color: yellow;
+}
 
 @keyframes toFade {
   0% {opacity: 40%; bottom: -500px;}
