@@ -487,6 +487,23 @@ footer p {
   text-align: center;
 } 
 
+.oval_transition {
+  transition: ease-in 0.5s;
+  background-color:coral;
+  padding:2%;
+}
+
+.reveal_para {
+  width: 20%;
+	height: 10%;
+	transform: skew(20deg);
+	background: aqua;
+  padding: 2%;
+  text-align: center;
+  float: right;
+  margin-right: 5%;
+}
+
 #congo {
   background-color: yellow;
 }
