@@ -353,6 +353,10 @@ function slideAll() {
       $("#sloth_info").show();
       $("#sloth_info").addClass("fadeShowLeft");
     });
+    $(".reveal_oval").click(function(){
+      $(".reveal_oval").text("50% has been allocated for logging");
+      $(".reveal_oval").addClass("oval_transition")
+    });
   });
 }
 
