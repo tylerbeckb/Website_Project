@@ -278,6 +278,16 @@ function getNearest(position) {
   // Sees what one is closer
   if (distance1 > distance2 && distance1 > distance3) {
     $("#amazon").slideDown();
+    $("#jag").hover(function(){
+      $("#sloth_info").hide();
+      $("#jag_info").show();
+      $("#jag_info").addClass("fadeShowLeft");
+    });
+    $("#sloth").hover(function(){
+      $("#jag_info").hide();
+      $("#sloth_info").show();
+      $("#sloth_info").addClass("fadeShowLeft");
+    });
   }
   else if (distance2 > distance1 && distance2 > distance3) {
     $("#congo").slideDown();
