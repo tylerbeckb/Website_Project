@@ -308,6 +308,7 @@ function slide() {
     $("#indo").slideUp();
     $("#amazon").slideUp();
     $("#congo").slideUp();
+    $("#jag_info").hide();
   });
 }
 
@@ -333,7 +334,14 @@ function slideAll() {
       ,function(){ displayCircle("black");
     });
     $("#jag").hover(function(){
-      $(".box40").addClass("fadeShowLeft");
+      $("#sloth_info").hide();
+      $("#jag_info").show();
+      $("#jag_info").addClass("fadeShowLeft");
+    });
+    $("#sloth").hover(function(){
+      $("#jag_info").hide();
+      $("#sloth_info").show();
+      $("#sloth_info").addClass("fadeShowLeft");
     });
   });
 }
