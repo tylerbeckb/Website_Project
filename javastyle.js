@@ -291,6 +291,18 @@ function getNearest(position) {
   }
   else if (distance2 > distance1 && distance2 > distance3) {
     $("#congo").slideDown();
+    $(".reveal_oval").click(function(){
+      $(".reveal_oval").text("50% has been allocated for logging");
+      $(".reveal_oval").addClass("oval_transition");
+    });
+    $(".reveal_para").click(function(){
+      $(".reveal_para").text("Only place which has all subspecies of gorillas");
+      $(".reveal_para").addClass("para_transition");
+    });
+    $(".reveal_rec").click(function(){
+      $(".reveal_rec").text("Many parts has not been seen by people");
+      $(".reveal_rec").addClass("rec_transition");
+    });
   }
   else {
     $("#indo").slideDown();
@@ -360,6 +372,10 @@ function slideAll() {
     $(".reveal_para").click(function(){
       $(".reveal_para").text("Only place which has all subspecies of gorillas");
       $(".reveal_para").addClass("para_transition");
+    });
+    $(".reveal_rec").click(function(){
+      $(".reveal_rec").text("Many parts has not been seen by people");
+      $(".reveal_rec").addClass("rec_transition");
     });
   });
 }
