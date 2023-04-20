@@ -1,109 +1,125 @@
 <html lang="en">
-<head>
-  <link rel="stylesheet" href="stylesheet.css" >
-  <title>Geolocation</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" ></script>
-  <script defer src="javastyle.js"></script>
-</head>
-<body onload="slide()">
-  <!--Navigation bar-->
-  <nav class="navigation">
-    <a href="home.html">Home</a>
-    <a href="uk_situation.html">UK Situation</a>
-    <a href="help.html">How to Help</a>
-    <a href="news.html">Latest News</a>
-    <a href="charity.html">Charites</a>
-    <a href="quiz.html">Quiz</a>
-  </nav>
-  <!--Title-->
-  <header class="large_background">
-    <figure>
-      <img src="Images/geolocation.jpg" alt="Forest with rising fog">
-      <figcaption class="reference">(Pixabay.n/d)</figcaption>
-      <div class="title">
-        <figcaption><h1>Geolocation</h1></figcaption>
-        <figcaption>____________________________</figcaption>
+  <head>
+    <link rel="stylesheet" href="stylesheet.css" >
+    <title>Geolocation</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" ></script>
+    <script defer src="javastyle.js"></script>
+  </head>
+  <body onload="slide()">
+    <!--Navigation bar-->
+    <nav class="navigation">
+      <a href="home.html">Home</a>
+      <a href="uk_situation.html">UK Situation</a>
+      <a href="help.html">How to Help</a>
+      <a href="news.html">Latest News</a>
+      <a href="charity.html">Charites</a>
+      <a href="quiz.html">Quiz</a>
+    </nav>
+    <!--Title-->
+    <header class="large_background">
+      <figure>
+        <img src="Images/geolocation.jpg" alt="Forest with rising fog">
+        <figcaption class="reference">(Pixabay.n/d)</figcaption>
+        <div class="title">
+          <figcaption><h1>Geolocation</h1></figcaption>
+          <figcaption>____________________________</figcaption>
+        </div>
+      </figure>
+    </header>
+    <div class="main_col">
+      <button onclick="geolocation()" class="geo_btn">Geolocation</button>
+      <button onclick="slideAll()" class="geo_btn">Show All</button>
+    </div>
+    <p id="location"></p>
+    <section id="indo">
+      <h2 class="geo_title">Sumatra Rainforest</h2>
+      <p class="col_60">
+        Sumatra rainforest is one of the most rapidly deforested places on the planet due to illegal logging and 
+        not enough funding to help stop it. Indonesia contribute over a 3rd of global carbon emissions from deforestation.
+        Palm oil plantations are being fuelled by demand which contributes heavily to Indonesian deforestation. 50 
+        million people live in the forest and rely on it to survive. However, with the shift to destroying the forest 
+        many are straving or forced to leave their home as nature gets burnt around them.
+      </p>
+      <canvas id="circle_info" class="circle_canvas"></canvas>
+      <div class="circle_tile">
+        <img id="orang" class="geo_img" src="Images/orangutang.jpg" alt="orangutan">
+        <img id="ele" class="geo_img" src="Images/elephant.jpg" alt="elephant">
+        <img id="rhino" class="geo_img" src="Images/rhino.jpg" alt="rhino">
       </div>
-    </figure>
-  </header>
-  <div class="main_col">
-    <button onclick="geolocation()" class="geo_btn">Geolocation</button>
-    <button onclick="slideAll()" class="geo_btn">Show All</button>
-  </div>
-  <p id="location"></p>
-  <section id="indo">
-    <h2 class="geo_title">Sumatra Rainforest</h2>
-    <p class="col_60">
-      Sumatra rainforest is one of the most rapidly deforested places on the planet due to illegal logging and 
-      not enough funding to help stop it. Indonesia contribute over a 3rd of global carbon emissions from deforestation.
-      Palm oil plantations are being fuelled by demand which contributes heavily to Indonesian deforestation. 50 
-      million people live in the forest and rely on it to survive. However, with the shift to destroying the forest 
-      many are straving or forced to leave their home as nature gets burnt around them.
-    </p>
-    <canvas id="circle_info" class="circle_canvas"></canvas>
-    <div class="circle_tile">
-      <img id="orang" class="geo_img" src="Images/orangutang.jpg" alt="orangutan">
-      <img id="ele" class="geo_img" src="Images/elephant.jpg" alt="elephant">
-      <img id="rhino" class="geo_img" src="Images/rhino.jpg" alt="rhino">
-    </div>
-  </section>
-  <section id="amazon">
-    <h2 class="geo_title">Amazon Rainforest</h2>
-    <p class="col_60">
-      The Amazon is the largest rainforest in the world with it having over a 10th of all known species in the world.
-      It is threaten by illegal resource overextraction, for example, logging and over fishing. These are unsustainable
-       and will cause the collapse of the ecosystem. A major threat is forest fires, with it releasing tons of CO2, it 
-       increases the intensisty of future fires. These are major threats that are affecting the people and biodiveristy 
-       Over 40 million people rely on the amazon and so does the world to prevent a climate crisis.
-    </p>
-    <div id="jag_info" class="box40 fade orangeBack">
-      <h3>Adopt a Jaguar</h3>
-      <br>
-      <p>
-        Jaguars are nearly threatherd in the amazon. They're found most in the amazon. However due to the rapid decline 
-        in the amazon, the population is decreasing Illegal trade is hurting the population further withn not enough aid
-         to counteract this activity. <br><br> To help you can adopt a jaguar with WWF. Every month a payment will be 
-         made which is cruical in the survial of the species. 
+    </section>
+    <section id="amazon">
+      <h2 class="geo_title">Amazon Rainforest</h2>
+      <p class="col_60">
+        The Amazon is the largest rainforest in the world with it having over a 10th of all known species in the world.
+        It is threaten by illegal resource overextraction, for example, logging and over fishing. These are unsustainable
+        and will cause the collapse of the ecosystem. A major threat is forest fires, with it releasing tons of CO2, it 
+        increases the intensisty of future fires. These are major threats that are affecting the people and biodiveristy 
+        Over 40 million people rely on the amazon and so does the world to prevent a climate crisis.
       </p>
-      <br>
-      <a href="https://support.worldwildlife.org/site/Donation2?df_id=15498&15498.donation=form1&s_src=AWS2101OQ18316A0
-      4237RX&S_subrc=web_HYCH&_gl=1*aq7w70*_ga*MTcyNDk4MzAxNy4xNjgxOTEzODY2*_ga_FK6M9RK84Z*MTY4MTk4MTg2OS4yLjEuMTY4MTk
-      4MzIzOS41OC4wLjA.&_ga=2.72173715.1488179900.1681913866-1724983017.1681913866" class="geo_btn">Donate</a>
-    </div>
-    <div id="sloth_info" class="box40 fade blueBack">
-      <h3>Adopt a 3 toed Sloth</h3>
-      <br>
-      <p>
-        A major threat to these animals is habitat loss as they live in trees. They are an important part of the 
-        balanced ecosystem. They don't move very fast so can't get away from danger. Their population is directly 
-        correlated to the health of the rainforest. <br><br> You can help by donating at WWF or adopting one, which 
-        will keep them at a stable population.
+      <div id="jag_info" class="box40 fade orangeBack">
+        <h3>Adopt a Jaguar</h3>
+        <br>
+        <p>
+          Jaguars are nearly threatherd in the amazon. They're found most in the amazon. However due to the rapid decline 
+          in the amazon, the population is decreasing Illegal trade is hurting the population further withn not enough aid
+          to counteract this activity. <br><br> To help you can adopt a jaguar with WWF. Every month a payment will be 
+          made which is cruical in the survial of the species. 
+        </p>
+        <br>
+        <a href="https://support.worldwildlife.org/site/Donation2?df_id=15498&15498.donation=form1&s_src=AWS2101OQ18316A0
+        4237RX&S_subrc=web_HYCH&_gl=1*aq7w70*_ga*MTcyNDk4MzAxNy4xNjgxOTEzODY2*_ga_FK6M9RK84Z*MTY4MTk4MTg2OS4yLjEuMTY4MTk
+        4MzIzOS41OC4wLjA.&_ga=2.72173715.1488179900.1681913866-1724983017.1681913866" class="geo_btn">Donate</a>
+      </div>
+      <div id="sloth_info" class="box40 fade blueBack">
+        <h3>Adopt a 3 toed Sloth</h3>
+        <br>
+        <p>
+          A major threat to these animals is habitat loss as they live in trees. They are an important part of the 
+          balanced ecosystem. They don't move very fast so can't get away from danger. Their population is directly 
+          correlated to the health of the rainforest. <br><br> You can help by donating at WWF or adopting one, which 
+          will keep them at a stable population.
+        </p>
+        <br>
+        <a href="https://gifts.worldwildlife.org/gift-center/gifts/Species-Adoptions/Three-toed-Sloth.aspx?sc=AWY1800OQ183
+        17A01909RX&_ga=2.75458578.1488179900.1681913866-1724983017.1681913866" class="geo_btn">Donate</a>
+      </div>
+      <div class="circle_tile">
+        <img id="jag" class="geo_img" src="Images/jaguar.jpg" alt="jaguar">
+        <img id="sloth" class="geo_img" src="Images/sloth.jpg" alt="sloth">
+      </div>
+    </section>
+    <section id="congo">
+      <h2 class="geo_title">Congo Rainforest</h2>
+      <p class="col_60">
+        This is the 2nd largest rainforest and provides 75 million people with natural resourses and a way of life. it is 
+        rich with resourses but this is what is causing the downfall. Demand for these resources increase which is causing 
+        more extraction, this destorys the ecosystem. The wildlife that lives in the rainforest is being illegally traded 
+        which leaves some parts of the rainforest empty of life. Agriculture is a main driver of deforestation in the 
+        Congo. The Congo id home to many species of Gorillas and elephants with declining populations.
       </p>
+      <div class="reveal_oval">Click to Reveal</div>
       <br>
-      <a href="https://gifts.worldwildlife.org/gift-center/gifts/Species-Adoptions/Three-toed-Sloth.aspx?sc=AWY1800OQ183
-      17A01909RX&_ga=2.75458578.1488179900.1681913866-1724983017.1681913866" class="geo_btn">Donate</a>
-    </div>
-    <div class="circle_tile">
-      <img id="jag" class="geo_img" src="Images/jaguar.jpg" alt="jaguar">
-      <img id="sloth" class="geo_img" src="Images/sloth.jpg" alt="sloth">
-    </div>
-  </section>
-  <section id="congo">
-    <h2 class="geo_title">Congo Rainforest</h2>
-    <p class="col_60">
-      This is the 2nd largest rainforest and provides 75 million people with natural resourses and a way of life. it is 
-      rich with resourses but this is what is causing the downfall. Demand for these resources increase which is causing 
-      more extraction, this destorys the ecosystem. The wildlife that lives in the rainforest is being illegally traded 
-      which leaves some parts of the rainforest empty of life. Agriculture is a main driver of deforestation in the 
-      Congo. The Congo id home to many species of Gorillas and elephants with declining populations.
-    </p>
-    <div class="reveal_oval">Click to Reveal</div>
-    <br>
-    <div class="reveal_para">Click to Reveal</div>
-    <br>
-    <div class="reveal_rec">Click to Reveal</div>
-  </section>
-</body>
+      <div class="reveal_para">Click to Reveal</div>
+      <br>
+      <div class="reveal_rec">Click to Reveal</div>
+    </section>
+
+    
+    <!--Footer-->
+    <footer>
+      <br>
+      <h3>Help Unite the Forests</h3>
+      <br><br>
+      <p>
+        You can act now! Share this website, either in person or on social media. Follow charites on social media to 
+        get the latest update on events or news about deforestation.
+        <br>
+        _____________________________________________________
+        <br><br>
+        Author: Tyler Brown
+      </p>
+    </footer>
+  </body>
 </html>
