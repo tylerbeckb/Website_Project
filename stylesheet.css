@@ -412,6 +412,7 @@ footer p {
   border-color: darkgreen;
   margin-left: 50px;
   margin-top: 50px;
+  color: black;
 }
 
 .geo_btn:hover {
@@ -455,6 +456,12 @@ footer p {
   height: 40%;
   width: 40%;
   margin-top: 10%;
+}
+
+.box40 {
+  background-color:darkorange;
+  width: 40%;
+  padding: 25px;
 }
 
 @keyframes toFade {
