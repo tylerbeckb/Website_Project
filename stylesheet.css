@@ -510,6 +510,22 @@ footer p {
   background-color:aquamarine;
 }
 
+.reveal_rec {
+  width: 20%;
+  height: 10%;
+  background-color: greenyellow;
+  text-align: center;
+  padding: 2%;
+  margin-top: 5%;
+}
+
+.rec_transition {
+  transition: ease-in 0.5s;
+  background-color: chartreuse;
+  padding: 1.2%;
+
+}
+
 #congo {
   background-color: yellow;
 }
