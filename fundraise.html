@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" ></script>
   </head>
-  <body onload="loadFade()">
+  <body onload="loadFade(), fundraise()">
     <script defer src="javastyle.js"></script>
     <!--Navigation bar-->
     <nav class="navigation">
@@ -44,7 +44,11 @@
       <div class="fund_race">
         <h2>Run a Marathon</h2>
         <ul>
-          <li>&bull; Pick a Marathon</li>
+          <li id="fund_list">&bull; Pick a Marathon</li>
+          <br>
+          <div id="fund_list1">
+            Go to find a race for all marathons running each year
+          </div>
           <li>&bull; Train</li>
           <li>&bull; Set up Fundraising Page</li>
           <li>&bull; Spread the Word</li>
