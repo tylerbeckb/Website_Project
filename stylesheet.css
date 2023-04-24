@@ -83,6 +83,7 @@ h2 {
 .col {
   content:"";
   display: table;
+  width: 100%;
 }
 
 .col_60 {
@@ -516,18 +517,47 @@ footer p {
   background-color: greenyellow;
   text-align: center;
   padding: 2%;
-  margin-top: 5%;
+  margin-top: 7%;
 }
 
 .rec_transition {
   transition: ease-in 0.5s;
   background-color: chartreuse;
   padding: 1.2%;
-
 }
 
 #congo {
   background-color: yellow;
+}
+
+/* Fundraise */
+.fund_race {
+  background-color: rgb(252, 144, 202);
+  width: 60%;
+  color: white;
+  float: left;
+  height: 800px;
+}
+
+.fund_race h2 {
+  padding-top: 5%;
+  padding-left: 15%;
+}
+
+.fund_race ul {
+  padding-top: 2.5%;
+  padding-left: 10%;
+}
+
+.fund_race li {
+  padding-top: 11%;
+  font-size: 25px;
+}
+
+.fund_race_img {
+  width: 40%;
+  height: 800px;
+  float: left;
 }
 
 @keyframes toFade {
@@ -553,6 +583,10 @@ footer p {
 
   * {
     font-size: 15px;
+  }
+
+  nav a {
+    padding: 25px;
   }
 
   h2 {
@@ -591,6 +625,27 @@ footer p {
 
   .circle_canvas {
     height: auto;
+    width: 100%;
+  }
+
+  .reveal_rec {
+    margin-left: 40%;
+    margin-bottom: 5%;
+  }
+
+  .reveal_oval {
+    margin-left: 40%;
+  }
+
+  .reveal_para {
+    margin-right: 40%;
+  }
+
+  .fund_race {
+    width: 100%;
+  }
+
+  .fund_race_img {
     width: 100%;
   }
 }
