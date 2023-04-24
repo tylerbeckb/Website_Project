@@ -432,8 +432,13 @@ function displayRhino() {
 
 function fundraise() {
   $(document).ready(function(){
-    $("#fund_list").click(function(){
-      $("#fund_list1").toggle();
+    $("#fund_list1_info").toggle();
+    $("#fund_list2_info").toggle();
+    $("#fund_list1").click(function(){
+      $("#fund_list1_info").toggle();
+    });
+    $("#fund_list2").click(function(){
+      $("#fund_list2_info").toggle();
     });
   });
 }
