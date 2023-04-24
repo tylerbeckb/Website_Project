@@ -429,3 +429,11 @@ function displayRhino() {
   ctx.fillText ("Sumatran rhino", 95, 70);
   ctx.fillText ("only 80 left", 95, 85);
 }
+
+function fundraise() {
+  $(document).ready(function(){
+    $("#fund_list").click(function(){
+      $("#fund_list1").toggle();
+    });
+  });
+}
