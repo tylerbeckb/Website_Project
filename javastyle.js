@@ -434,11 +434,19 @@ function fundraise() {
   $(document).ready(function(){
     $("#fund_list1_info").toggle();
     $("#fund_list2_info").toggle();
+    $("#fund_list3_info").toggle();
+    $("#fund_list4_info").toggle();
     $("#fund_list1").click(function(){
       $("#fund_list1_info").toggle();
     });
     $("#fund_list2").click(function(){
       $("#fund_list2_info").toggle();
+    });
+    $("#fund_list3").click(function(){
+      $("#fund_list3_info").toggle();
+    });
+    $("#fund_list4").click(function(){
+      $("#fund_list4_info").toggle();
     });
   });
 }
