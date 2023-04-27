@@ -550,8 +550,11 @@ footer p {
 }
 
 .fund_race li {
-  padding-top: 10%;
   font-size: 25px;
+}
+
+.fund_race div {
+  padding-bottom: 3%;
 }
 
 .fund_race_img {
@@ -559,6 +562,7 @@ footer p {
   height: 800px;
   float: left;
 }
+
 
 @keyframes toFade {
   0% {opacity: 40%; bottom: -500px;}
