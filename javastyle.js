@@ -431,7 +431,9 @@ function displayRhino() {
 }
 
 function fundraise() {
+  var imgIndex = 1;
   $(document).ready(function(){
+    $("#slide1").fadeIn();
     $("#fund_list1_info").toggle();
     $("#fund_list2_info").toggle();
     $("#fund_list3_info").toggle();
@@ -448,5 +450,32 @@ function fundraise() {
     $("#fund_list4").click(function(){
       $("#fund_list4_info").toggle();
     });
+    $(".slide_left").click(function(){
+      changeSlide(-1);
+    });
+    $(".slide_right").click(function(){
+      changeSlide(1);
+    });
+
+    function changeSlide (indexChange) {
+      imgIndex += indexChange;
+      if (imgIndex == 1 || imgIndex > 3) {
+        imgIndex = 1;
+        $("#slide1").fadeIn();
+        $("#slide2").hide();
+        $("#slide3").hide();
+      }
+      if (imgIndex == 2) {
+        $("#slide1").hide();
+        $("#slide2").fadeIn();
+        $("#slide3").hide();
+      }
+      if (imgIndex == 3 || imgIndex < 1) {
+        imgIndex = 3;
+        $("#slide1").hide();
+        $("#slide2").hide();
+        $("#slide3").fadeIn();
+      }
+    }
   });
 }
