@@ -576,6 +576,16 @@ footer p {
   float: right;
 }
 
+.info_box {
+  background-color: orange;
+  text-align: center;
+  align-items: center;
+  margin-top: 75px;
+  margin-bottom: 75px;
+  height: 350px;
+  padding: 30px;
+}
+
 @keyframes toFade {
   0% {opacity: 40%; bottom: -500px;}
   50%{opacity: 70%;}
@@ -663,6 +673,11 @@ footer p {
 
   .fund_race_img {
     width: 100%;
+  }
+
+  .info_box {
+    height: 200px;
+    margin: 50px
   }
 }
 
