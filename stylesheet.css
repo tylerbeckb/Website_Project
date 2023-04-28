@@ -563,6 +563,12 @@ footer p {
   float: left;
 }
 
+.slider_img {
+  width: 100%;
+  display: none;
+}
+
+
 
 @keyframes toFade {
   0% {opacity: 40%; bottom: -500px;}
