@@ -586,6 +586,14 @@ footer p {
   padding: 30px;
 }
 
+.card_style {
+  width: 50%;
+}
+
+.card_style img {
+  width: 100%;
+}
+
 @keyframes toFade {
   0% {opacity: 40%; bottom: -500px;}
   50%{opacity: 70%;}
