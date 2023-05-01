@@ -588,6 +588,7 @@ footer p {
 
 .card_style {
   width: 50%;
+  float: left;
 }
 
 .card_style img {
