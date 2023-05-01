@@ -434,6 +434,8 @@ function fundraise() {
   var imgIndex = 1;
   $(document).ready(function(){
     $("#slide1").fadeIn();
+    $("#info2").hide();
+    $("#info3").hide();
     $("#fund_list1_info").toggle();
     $("#fund_list2_info").toggle();
     $("#fund_list3_info").toggle();
@@ -464,17 +466,26 @@ function fundraise() {
         $("#slide1").fadeIn();
         $("#slide2").hide();
         $("#slide3").hide();
+        $("#info1").show();
+        $("#info2").hide();
+        $("#info3").hide();
       }
       if (imgIndex == 2) {
         $("#slide1").hide();
         $("#slide2").fadeIn();
         $("#slide3").hide();
+        $("#info1").hide();
+        $("#info2").show();
+        $("#info3").hide();
       }
       if (imgIndex == 3 || imgIndex < 1) {
         imgIndex = 3;
         $("#slide1").hide();
         $("#slide2").hide();
         $("#slide3").fadeIn();
+        $("#info1").hide();
+        $("#info2").hide();
+        $("#info3").show();
       }
     }
   });
