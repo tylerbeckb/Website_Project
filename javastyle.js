@@ -490,3 +490,14 @@ function fundraise() {
     }
   });
 }
+
+function extinction() {
+  $(document).ready(function(){
+    $("#tiger_info_overlay").hide();
+    $("#tiger_card").hover(function(){
+      $("#tiger_info_overlay").fadeIn();
+    }, function(){
+      $("#tiger_info_overlay").fadeOut();
+    });
+  });
+}
