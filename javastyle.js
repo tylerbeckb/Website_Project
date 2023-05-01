@@ -505,6 +505,7 @@ function extinction() {
     $("#tiger_info_overlay").hide();
     $("#otter_info_overlay").hide();
     $("#frog_info_overlay").hide();
+    $("#tapir_info_overlay").hide();
     // Fades in info on hover for tiger
     $("#tiger_card").hover(function(){
       $("#tiger_info_overlay").fadeIn();
@@ -517,11 +518,17 @@ function extinction() {
     }, function(){
       $("#otter_info_overlay").fadeOut();
     });
-    // Fades in info on hover for forg
+    // Fades in info on hover for frog
     $("#frog_card").hover(function(){
       $("#frog_info_overlay").fadeIn();
     }, function(){
       $("#frog_info_overlay").fadeOut();
+    });
+    // Fades in info on hover for tapir
+    $("#tapir_card").hover(function(){
+      $("#tapir_info_overlay").fadeIn();
+    }, function(){
+      $("#tapir_info_overlay").fadeOut();
     });
   });
 }
