@@ -503,11 +503,25 @@ function extinction() {
   $(document).ready(function(){
     // Hides all info
     $("#tiger_info_overlay").hide();
+    $("#otter_info_overlay").hide();
+    $("#frog_info_overlay").hide();
     // Fades in info on hover for tiger
     $("#tiger_card").hover(function(){
       $("#tiger_info_overlay").fadeIn();
     }, function(){
       $("#tiger_info_overlay").fadeOut();
+    });
+    // Fades in info on hover for otter
+    $("#otter_card").hover(function(){
+      $("#otter_info_overlay").fadeIn();
+    }, function(){
+      $("#otter_info_overlay").fadeOut();
+    });
+    // Fades in info on hover for forg
+    $("#frog_card").hover(function(){
+      $("#frog_info_overlay").fadeIn();
+    }, function(){
+      $("#frog_info_overlay").fadeOut();
     });
   });
 }
