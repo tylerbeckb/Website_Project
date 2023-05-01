@@ -355,16 +355,19 @@ function slideAll() {
       displayCircle("red"); displayRhino(); }
       ,function(){ displayCircle("black");
     });
+    // Displays circle for jag on hover
     $("#jag").hover(function(){
       $("#sloth_info").hide();
       $("#jag_info").show();
       $("#jag_info").addClass("fadeShowLeft");
     });
+    // Displays circle for sloth on hover
     $("#sloth").hover(function(){
       $("#jag_info").hide();
       $("#sloth_info").show();
       $("#sloth_info").addClass("fadeShowLeft");
     });
+    // Displays facts when clicked for each shape
     $(".reveal_oval").click(function(){
       $(".reveal_oval").text("50% has been allocated for logging");
       $(".reveal_oval").addClass("oval_transition");
@@ -430,9 +433,11 @@ function displayRhino() {
   ctx.fillText ("only 80 left", 95, 85);
 }
 
+// Used in fundraise page
 function fundraise() {
   var imgIndex = 1;
   $(document).ready(function(){
+    // Sets page to default
     $("#slide1").fadeIn();
     $("#info2").hide();
     $("#info3").hide();
@@ -440,6 +445,7 @@ function fundraise() {
     $("#fund_list2_info").toggle();
     $("#fund_list3_info").toggle();
     $("#fund_list4_info").toggle();
+    // Checks for clikcs on the lists
     $("#fund_list1").click(function(){
       $("#fund_list1_info").toggle();
     });
@@ -452,6 +458,7 @@ function fundraise() {
     $("#fund_list4").click(function(){
       $("#fund_list4_info").toggle();
     });
+    // Checks for clicks for the slideshow
     $(".slide_left").click(function(){
       changeSlide(-1);
     });
@@ -491,9 +498,12 @@ function fundraise() {
   });
 }
 
+// Used in extinction page
 function extinction() {
   $(document).ready(function(){
+    // Hides all info
     $("#tiger_info_overlay").hide();
+    // Fades in info on hover for tiger
     $("#tiger_card").hover(function(){
       $("#tiger_info_overlay").fadeIn();
     }, function(){
