@@ -532,9 +532,14 @@ function extinction() {
       $("#tapir_info_overlay").fadeOut();
     });
     $(".extinct_learn_card").hover(function(){
-      $(".title").fadeIn();
+      $("#help_title").fadeIn();
     }, function(){
-      $(".title").fadeOut();
+      $("#help_title").fadeOut();
+    });
+    $(".extinct_charity_card").hover(function(){
+      $("#char_title").fadeIn();
+    }, function(){
+      $("#char_title").fadeOut();
     });
   });
 }
