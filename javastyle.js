@@ -539,6 +539,6 @@ function extinction() {
   });
 }
 
-function fadeAll () {
-  $("body").fadeOut();
+function pageChange () {
+  window.location.replace("help.html");
 }
