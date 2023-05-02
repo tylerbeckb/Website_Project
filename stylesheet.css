@@ -696,5 +696,10 @@ footer p {
     height: 200px;
     margin: 50px
   }
+
+  .card_style p {
+    padding-top: 0;
+    font-size: 10px;
+  }
 }
 
