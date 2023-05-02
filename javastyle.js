@@ -544,6 +544,11 @@ function extinction() {
   });
 }
 
-function pageChange () {
-  window.location.replace("help.html");
+function pageChange (n) {
+  if (n == 1) {
+    window.location.replace("help.html");
+  }
+  else {
+    window.location.replace("charity.html");
+  }
 }
