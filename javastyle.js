@@ -506,7 +506,8 @@ function extinction() {
     $("#otter_info_overlay").hide();
     $("#frog_info_overlay").hide();
     $("#tapir_info_overlay").hide();
-    $(".title").hide();
+    $("#help_title").hide();
+    $("#char_title").hide();
     // Fades in info on hover for tiger
     $("#tiger_card").hover(function(){
       $("#tiger_info_overlay").fadeIn();
