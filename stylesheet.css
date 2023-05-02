@@ -603,6 +603,17 @@ footer p {
   background-color: rgb(128, 128, 128, 0.5);
 }
 
+.extinct_learn_card {
+  background-color: orange;
+  padding: 20px;
+  color: white;
+}
+
+.extinct_learn_card img {
+  padding: 15px; 
+  width: 100%;
+}
+
 @keyframes toFade {
   0% {opacity: 40%; bottom: -500px;}
   50%{opacity: 70%;}
