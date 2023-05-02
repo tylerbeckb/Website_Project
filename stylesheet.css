@@ -606,7 +606,6 @@ footer p {
 .extinct_learn_card {
   background-color: orange;
   padding: 20px;
-  color: white;
 }
 
 .extinct_learn_card img {
@@ -622,6 +621,11 @@ footer p {
 .extinct_charity_card img {
   width: 100%;
   padding: 15px;
+}
+
+.extinct_form {
+  background-color: aquamarine;
+  padding: 20px;
 }
 
 @keyframes toFade {
