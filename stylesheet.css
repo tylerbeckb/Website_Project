@@ -614,6 +614,11 @@ footer p {
   width: 100%;
 }
 
+.extinct_charity_card {
+  background-color: springgreen;
+  padding: 20px;
+}
+
 @keyframes toFade {
   0% {opacity: 40%; bottom: -500px;}
   50%{opacity: 70%;}
