@@ -506,6 +506,7 @@ function extinction() {
     $("#otter_info_overlay").hide();
     $("#frog_info_overlay").hide();
     $("#tapir_info_overlay").hide();
+    $(".title").hide();
     // Fades in info on hover for tiger
     $("#tiger_card").hover(function(){
       $("#tiger_info_overlay").fadeIn();
@@ -530,5 +531,14 @@ function extinction() {
     }, function(){
       $("#tapir_info_overlay").fadeOut();
     });
+    $(".extinct_learn_card").hover(function(){
+      $(".title").fadeIn();
+    }, function(){
+      $(".title").fadeOut();
+    });
   });
+}
+
+function fadeAll () {
+  $("body").fadeOut();
 }
