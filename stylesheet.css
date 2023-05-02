@@ -619,6 +619,11 @@ footer p {
   padding: 20px;
 }
 
+.extinct_charity_card img {
+  width: 100%;
+  padding: 15px;
+}
+
 @keyframes toFade {
   0% {opacity: 40%; bottom: -500px;}
   50%{opacity: 70%;}
@@ -658,6 +663,7 @@ footer p {
 
   .col_50 {
     width: 100%;
+    margin-top: 25px;
   }
 
   .col_60 {
