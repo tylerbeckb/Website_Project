@@ -60,7 +60,7 @@
       <div id="frog_card" class="card card_style">
         <img class="card-img-top" src="Images/frogCard.jpg" alt="Poison Dart Frog">
         <div class="card-body">
-          <h4 class="card-title">Poision Dart Frog</h4>
+          <h4 class="card-title">Poision Dart Frog <br></h4>
         </div>
         <div id="frog_info_overlay" class="card-img-overlay">
           <p class="card-text">
@@ -83,7 +83,9 @@
         </div>
       </div>
     </section>
+
     <section class="col">
+      <!--Help Card-->
       <div class="col_50">
         <div class="extinct_learn_card">
           <figure onclick="pageChange(1)">
@@ -99,6 +101,7 @@
           </p>
         </div>
       </div>
+      <!--Charity Card-->
       <div class="col_50">
         <div class="extinct_charity_card">
           <figure onclick="pageChange(2)">
@@ -112,6 +115,34 @@
           <p>
             Learn what charities exist that you can donate to. <br><br> Click the Image to learn more! <br><br>
           </p>
+        </div>
+      </div>
+      <!--Form Card-->
+      <div class="main_col">
+        <div class="extinct_form" onclick="displayQuestion()">
+          <h2>Questionnaire</h2>
+          <p>Click to fill in a questionnaire</p> <br>
+          <form>
+            <fieldset>
+              <label for="name">Name:</label>
+              <input type="text" name="name" id="name">
+              <br>
+              <label for="email">Email:</label>
+              <input type="text" name="email" id="email">
+              <br> <br>
+              <p>What charites did you know before?</p> <br>
+              <div class="checkbox_style">
+                <input type="checkbox" name="char1" id="char1">
+                <label for="char1">Rainforest Trust</label>
+                <br>
+                <input type="checkbox" name="char2" id="char2">
+                <label for="char2">WWF</label>
+                <br>
+                <input type="checkbox" name="char3" id="char3">
+                <label for="char3">Cool Earth</label>
+              </div>
+            </fieldset>
+          </form>
         </div>
       </div>
     </section>
