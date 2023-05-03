@@ -543,12 +543,14 @@ function extinction() {
     }, function(){
       $("#char_title").fadeOut();
     });
+    // Slides down questionnaire
     $("#form").click(function(){
       $("#final_form").slideDown();
     });
   });
 }
 
+// Changes page for extinction when images are clicked
 function pageChange (n) {
   if (n == 1) {
     window.location.replace("help.html");
