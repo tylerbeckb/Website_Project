@@ -638,6 +638,29 @@ footer p {
   padding-left: 45%;
 }
 
+.sub_btn {
+  text-decoration: none;
+  padding: 10px;
+  font-weight: bold;
+  width: 100px;
+  height: 50px;
+  text-align: center;
+  border-radius: 15px;
+  cursor: pointer;
+  color: black;
+  border-style: solid;
+  border-color: grey;
+  background-color: white;
+}
+
+.sub_btn:hover {
+  transition: ease-in 0.1s;
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  background-color: grey;
+}
+
 @keyframes toFade {
   0% {opacity: 40%; bottom: -500px;}
   50%{opacity: 70%;}
