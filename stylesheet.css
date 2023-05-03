@@ -628,9 +628,14 @@ footer p {
   padding: 20px;
 }
 
-.checkbox_style{
-  text-align:left;
-  padding-left:40%;
+.checkbox_style {
+  text-align: left;
+  padding-left: 40%;
+}
+
+.radio_style {
+  text-align: left;
+  padding-left: 45%;
 }
 
 @keyframes toFade {
