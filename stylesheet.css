@@ -628,6 +628,11 @@ footer p {
   padding: 20px;
 }
 
+.checkbox_style{
+  text-align:left;
+  padding-left:40%;
+}
+
 @keyframes toFade {
   0% {opacity: 40%; bottom: -500px;}
   50%{opacity: 70%;}
