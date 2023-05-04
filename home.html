@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" ></script>
   </head>
-  <body onload="loadFade()">
+  <body onload="loadFade(), automaticSlide()">
     <script defer src="javastyle.js"></script>
     <!--Navigation bar-->
     <nav class="navigation">
@@ -128,10 +128,18 @@
           </p>
         </div>
         <br><br><br><br>
-        <figure id="fadeLeft" class="fade">
-          <img class="col2_img" src="Images/forest_fire.jpg" alt="Forest on fire">
-          <figcaption class="reference">(Yamkasikorn.2019)</figcaption>
-        </figure>
+        <!--Slideshow-->
+        <div id="slideshow_fire" class="slider_img">
+          <figure>
+            <img class="col2_img" src="Images/forest_fire.jpg" alt="Forest on fire">
+            <figcaption class="reference slider_img">(Yamkasikorn.2019)</figcaption>
+          </figure>
+        </div>
+        <div id="slideshow_animal" class="slider_img">
+          <figure>
+            <img class="col2_img" src="Images/animalGrazing.jpg" alt="Animal Grazing">
+            <figcaption class="reference slider_img">TBD</figcaption>
+          </figure>
       </div>
     </section>
 
