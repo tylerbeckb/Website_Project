@@ -670,6 +670,11 @@ footer p {
   margin-top: 75px;
 }
 
+.uk_sit_form {
+  background-color:lavenderblush;
+  margin-bottom: 50px;
+}
+
 @keyframes toFade {
   0% {opacity: 40%; bottom: -500px;}
   50%{opacity: 70%;}
