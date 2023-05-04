@@ -551,11 +551,28 @@ function extinction() {
 }
 
 // Changes page for extinction when images are clicked
-function pageChange (n) {
+function pageChange(n) {
   if (n == 1) {
     window.location.replace("help.html");
   }
   else {
     window.location.replace("charity.html");
   }
+}
+
+// Changes imgs every 3 seconds
+function automaticSlide() {
+  $(document).ready(function(){
+    $("#slideshow_fire").fadeIn();
+    $("#slideshow_animal").hide();
+    setTimeout(function(){
+      $("#slideshow_animal").fadeIn();
+      $("#slideshow_fire").hide();
+    }, 3000);
+    setTimeout(function(){
+      $("#slideshow_fire").fadeIn();
+      $("#slideshow_animal").hide();
+      automaticSlide();
+    }, 6000);
+  });
 }
