@@ -555,8 +555,17 @@ function pageChange(n) {
   if (n == 1) {
     window.location.replace("help.html");
   }
-  else {
+  else if (n == 2) {
     window.location.replace("charity.html");
+  }
+  else if (n == 3) {
+    window.location.replace("https://www.coolearth.org");
+  }
+  else if (n == 4) {
+    window.location.replace("https://www.wwf.org.uk");
+  }
+  else if (n == 5) {
+    window.location.replace("https://www.rainforesttrust.org");
   }
 }
 
@@ -575,4 +584,13 @@ function automaticSlide() {
       automaticSlide();
     }, 6000);
   });
+}
+
+function revealQuest() {
+  $(document).ready(function(){
+    $("#uk_quest").slideUp();
+    $(".uk_sit_form").click(function(){
+      $("#uk_quest").slideDown();
+    });
+  })
 }
