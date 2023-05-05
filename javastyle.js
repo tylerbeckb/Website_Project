@@ -219,7 +219,7 @@ function loadFade() {
     $(".navigation").delay(1000).fadeIn(2000);
     // Fades elements in when scrolling
     $(window).scroll(function() {
-      $(".fade").each(function() {
+      $(".fading").each(function() {
         // Calculates postion
         var bot_element = $(this).offset().top ;
         var bot_window = $(window).scrollTop() + $(window).height();
