@@ -10,13 +10,20 @@
   <body onload="loadFade(), revealQuest()">
     <script defer src="javastyle.js"></script>
     <!--Navigation bar-->
-    <nav class="navigation">
-      <a href="home.html">Home</a>
-      <a href="uk_situation.html">UK Situation</a>
-      <a href="help.html">How to Help</a>
-      <a href="news.html">Latest News</a>
-      <a href="charity.html">Charites</a>
-      <a href="quiz.html">Quiz</a>
+    <nav class="nav_bar">
+      <a class="nav_link nav_hover" href="home.html">Home</a>
+      <a class="nav_link nav_hover" href="uk_situation.html">UK Situation</a>
+      <div class="nav_link">
+        <button class="drop_btn nav_hover" onclick="toggleDrop()">Take Action</button>
+        <div class="dropdown_menu" id="dropdown">
+          <a class="drop_link" href="help.html">How to Help</a>
+          <a class="drop_link" href="fundraise.html">Fundraise</a>
+          <a class="drop_link" href="charity.html">Charities</a>
+        </div>
+      </div> 
+      <a class="nav_link nav_hover" href="news.html">Latest News</a>
+      <a class="nav_link nav_hover" href="geolocation.html">Rainforest</a>
+      <a class="nav_link nav_hover" href="quiz.html">Quiz</a>
     </nav>
     <!--Title-->
     <header class="large_background">
@@ -82,38 +89,38 @@
           </figure>
           <a class="btn_green" href="help.html">How to Help!</a>
       </div>
-      <!--Questionnaire-->
-      <div class="main_col uk_sit_form">
-        <h2>Questionnaire</h2> <br>
-        <p>Click to reveal</p> <br>
-        <form id="uk_quest">
-          <fieldset>
-            <legend>Questionnaire</legend> <br>
-            <label for="">Name:</label>
-            <input type="text" name="name" id="name" placeholder="Tim Smith" required>
-            <br>
-            <label for="email">Email:</label>
-            <input type="email" name="email" id="email" placeholder="example@example.com" required>
-            <br> <br>
-            <p>Do you recycle regular?</p>
-            <div class="radio_style">
-              <input type="radio" name="donate" id="radio1">
-              <label for="radio1">Yes</label>
-              <br>
-              <input type="radio" name="donate" id="radio2">
-              <label for="radio2">No</label>
-            </div>
-            <br>
-            <p>Explain the reasoning for your response</p> <br>
-            <textarea rows="4" col="50" maxlength="250"></textarea required> <br><br>
-            <p>How worried are you about the climate crisis</p><br>
-            <input type="range" name="prost" id="prost" min="0" max="100"> <br>
-            <label for="prost">Not worried - Really worried (0 - 100)</label> <br> <br>
-            <input class="sub_btn" type="submit" value="Submit"> <br><br>
-          </fieldset>
-        </form>
-      </div>
     </section>
+    <!--Questionnaire-->
+    <div class="main_col uk_sit_form fading">
+      <h2>Questionnaire</h2> <br>
+      <p>Click to reveal</p> <br>
+      <form id="uk_quest">
+        <fieldset>
+          <legend>Questionnaire</legend> <br>
+          <label for="">Name:</label>
+          <input type="text" name="name" id="name" placeholder="Tim Smith" required>
+          <br>
+          <label for="email">Email:</label>
+          <input type="email" name="email" id="email" placeholder="example@example.com" required>
+          <br> <br>
+          <p>Do you recycle regular?</p>
+          <div class="radio_style">
+            <input type="radio" name="donate" id="radio1">
+            <label for="radio1">Yes</label>
+            <br>
+            <input type="radio" name="donate" id="radio2">
+            <label for="radio2">No</label>
+          </div>
+          <br>
+          <p>Explain the reasoning for your response</p> <br>
+          <textarea rows="4" col="50" maxlength="250"></textarea required> <br><br>
+          <p>How worried are you about the climate crisis</p><br>
+          <input type="range" name="prost" id="prost" min="0" max="100"> <br>
+          <label for="prost">Not worried - Really worried (0 - 100)</label> <br> <br>
+          <input class="sub_btn" type="submit" value="Submit"> <br><br>
+        </fieldset>
+      </form>
+    </div>
 
 
     <!--Footer-->

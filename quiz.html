@@ -14,13 +14,20 @@
   <body onload="quiz()" class="quiz_body">
     <script defer src="javastyle.js"></script>
     <!--Navigation bar-->
-    <nav class="navigation">
-      <a href="home.html">Home</a>
-      <a href="uk_situation.html">UK Situation</a>
-      <a href="help.html">How to Help</a>
-      <a href="news.html">Latest News</a>
-      <a href="charity.html">Charities</a>
-      <a href="quiz.html">Quiz</a>
+    <nav class="nav_bar">
+      <a class="nav_link nav_hover" href="home.html">Home</a>
+      <a class="nav_link nav_hover" href="uk_situation.html">UK Situation</a>
+      <div class="nav_link">
+        <button class="drop_btn nav_hover" onclick="toggleDrop()">Take Action</button>
+        <div class="dropdown_menu" id="dropdown">
+          <a class="drop_link" href="help.html">How to Help</a>
+          <a class="drop_link" href="fundraise.html">Fundraise</a>
+          <a class="drop_link" href="charity.html">Charities</a>
+        </div>
+      </div> 
+      <a class="nav_link nav_hover" href="news.html">Latest News</a>
+      <a class="nav_link nav_hover" href="geolocation.html">Rainforest</a>
+      <a class="nav_link nav_hover" href="quiz.html">Quiz</a>
     </nav>
     <br><br><br>
     <!--Progess bar-->
