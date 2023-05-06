@@ -34,6 +34,10 @@ nav a :hover {
   padding-left: 5%;
 }
 
+.nav_hover:hover {
+  opacity: 0.5;
+}
+
 .dropdown_menu {
   background-color: gainsboro;
   text-decoration: none;
@@ -54,6 +58,10 @@ nav a :hover {
   height: 50px;
   padding: 10px;
   text-align: center;
+}
+
+.drop_link:hover {
+  background-color: gray;
 }
 
 .drop_btn {
@@ -735,6 +743,14 @@ footer p {
 
   nav a {
     padding: 25px;
+  }
+
+  .nav_link {
+    padding-top: 20px;
+  }
+
+  .drop_btn {
+    margin-bottom: 23px;
   }
 
   h2 {
