@@ -594,3 +594,9 @@ function revealQuest() {
     });
   })
 }
+
+function toggleDrop() {
+  $(document).ready(function(){
+    $("#dropdown").toggle();
+  })
+}
