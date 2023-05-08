@@ -213,10 +213,11 @@ function quiz() {
 function loadFade() {
   $(document).ready(function() {
     // Fades in the title and navbar
+    $("#dropdown").toggle();
     $(".title").hide();
     $(".title").fadeIn(2000);
-    $(".navigation").hide();
-    $(".navigation").delay(1000).fadeIn(2000);
+    $(".nav_bar").hide();
+    $(".nav_bar").delay(1000).fadeIn(2000);
     // Fades elements in when scrolling
     $(window).scroll(function() {
       $(".fading").each(function() {
@@ -595,6 +596,7 @@ function revealQuest() {
   })
 }
 
+// Toggles dropdown for nav bar
 function toggleDrop() {
   $(document).ready(function(){
     $("#dropdown").toggle();
