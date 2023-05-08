@@ -11,7 +11,7 @@
     
     
   </head>
-  <body onload="quiz()" class="quiz_body">
+  <body onload="quiz(), loadFade()" class="quiz_background">
     <script defer src="javastyle.js"></script>
     <!--Navigation bar-->
     <nav class="nav_bar">
@@ -30,48 +30,52 @@
       <a class="nav_link nav_hover" href="quiz.html">Quiz</a>
     </nav>
     <br><br><br>
-    <!--Progess bar-->
-    <div class="progress_style">
-      <div class="progress">
-        <div class="progress-bar bg-success progress-bar-striped progress-bar-animated">0%</div>
+
+
+    <section class="quiz_body">
+      <!--Progess bar-->
+      <div class="progress_style">
+        <div class="progress">
+          <div class="progress-bar bg-success progress-bar-striped progress-bar-animated">0%</div>
+        </div>
       </div>
-    </div>
-    <!--Title-->
-    <h1>Deforestation Quiz</h1>
-    <div class="container">
-      <!--Questions-->
-      <div id="question_area" >
-        <div id="question">Question</div>
-        <!--Answer buttons-->
-        <div id="answers" class="btn_area">
-          <button class="quiz_btn">A1</button>
-          <button class="quiz_btn">A2</button>
-          <button class="quiz_btn">A3</button>
-          <button class="quiz_btn">A4</button>
-        </div> 
+      <!--Title-->
+      <h1>Deforestation Quiz</h1>
+      <div class="container">
+        <!--Questions-->
+        <div id="question_area" >
+          <div id="question">Question</div>
+          <!--Answer buttons-->
+          <div id="answers" class="btn_area">
+            <button class="quiz_btn">A1</button>
+            <button class="quiz_btn">A2</button>
+            <button class="quiz_btn">A3</button>
+            <button class="quiz_btn">A4</button>
+          </div> 
+        </div>
+        <!--Score-->
+        <div id="score_card">
+          <p>Score = </p>
+        </div>
+        <div class="start_btn">
+          <button id="start" class="quiz_btn">Start</button>
+        </div>
+        <form id="form" action="example.html">
+          <label>First Name: <input type="text" /></label>
+          <br>
+          <label>Last Name: <input type="text" /></label>
+          <br>
+          <input type="submit" id="submit" class="quiz_btn">
+        </form>
+        <div id="leaderboard" class="leaderboard">
+          <h3>Leaderboard</h3>
+          <ol>
+            <li id="1">Weldon Truman - 5</li>
+            <li id="2">Prosper Winston - 4</li>
+            <li id="3">Darion Earl - 3</li>
+          </ol>
+        </div>
       </div>
-      <!--Score-->
-      <div id="score_card">
-        <p>Score = </p>
-      </div>
-      <div class="start_btn">
-        <button id="start" class="quiz_btn">Start</button>
-      </div>
-      <form id="form" action="example.html">
-        <label>First Name: <input type="text" /></label>
-        <br>
-        <label>Last Name: <input type="text" /></label>
-        <br>
-        <input type="submit" id="submit" class="quiz_btn">
-      </form>
-      <div id="leaderboard" class="leaderboard">
-        <h3>Leaderboard</h3>
-        <ol>
-          <li id="1">Weldon Truman - 5</li>
-          <li id="2">Prosper Winston - 4</li>
-          <li id="3">Darion Earl - 3</li>
-        </ol>
-      </div>
-    </div>
+    </section>
   </body>
 </html>
