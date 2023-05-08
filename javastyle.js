@@ -265,6 +265,7 @@ function getDistance(lat1, lon1, lat2, lon2) {
   return distance;
 }
 
+// Gets degree in radians
 function radians(value) {
   return Math.PI * (value/180)
 }
@@ -276,22 +277,27 @@ function getNearest(position) {
   var distance2 = getDistance(position.coords.latitude, position.coords.longitude, -5.9175, 12.5484);
   var distance3 = getDistance(position.coords.latitude, position.coords.longitude, -1.75, 102.75);
 
-  // Sees what one is closer
+  // Sees what one is closer and displays that section
+  // Amazon
   if (distance1 > distance2 && distance1 > distance3) {
     $("#amazon").slideDown();
+    // Displays jag info on hover
     $("#jag").hover(function(){
       $("#sloth_info").hide();
       $("#jag_info").show();
       $("#jag_info").addClass("fadeShowLeft");
     });
+    //Displays sloth info on hover
     $("#sloth").hover(function(){
       $("#jag_info").hide();
       $("#sloth_info").show();
       $("#sloth_info").addClass("fadeShowLeft");
     });
   }
+  // Congo
   else if (distance2 > distance1 && distance2 > distance3) {
     $("#congo").slideDown();
+    // Reveals fact on click
     $(".reveal_oval").click(function(){
       $(".reveal_oval").text("50% has been allocated for logging");
       $(".reveal_oval").addClass("oval_transition");
@@ -305,6 +311,7 @@ function getNearest(position) {
       $(".reveal_rec").addClass("rec_transition");
     });
   }
+  // Indo
   else {
     $("#indo").slideDown();
     // Displays circle for orang on hover
@@ -467,6 +474,7 @@ function fundraise() {
       changeSlide(1);
     });
 
+    // Changes the info and image
     function changeSlide (indexChange) {
       imgIndex += indexChange;
       if (imgIndex == 1 || imgIndex > 3) {
@@ -534,6 +542,7 @@ function extinction() {
     }, function(){
       $("#tapir_info_overlay").fadeOut();
     });
+    // Fades title in on hover
     $(".extinct_learn_card").hover(function(){
       $("#help_title").fadeIn();
     }, function(){
@@ -587,6 +596,7 @@ function automaticSlide() {
   });
 }
 
+// Displays questionnaire
 function revealQuest() {
   $(document).ready(function(){
     $("#uk_quest").slideUp();
