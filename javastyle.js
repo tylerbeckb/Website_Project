@@ -218,6 +218,7 @@ function loadFade() {
     $(".title").fadeIn(2000);
     $(".nav_bar").hide();
     $(".nav_bar").delay(1000).fadeIn(2000);
+    $("#btn_fact2").hide();
     // Fades elements in when scrolling
     $(window).scroll(function() {
       $(".fading").each(function() {
@@ -611,4 +612,12 @@ function toggleDrop() {
   $(document).ready(function(){
     $("#dropdown").toggle();
   })
+}
+
+function displayFact(factNum) {
+  $(document).ready(function(){
+    if (factNum == 1) {
+      $("#btn_fact2").fadeIn();
+    }
+  });
 }
