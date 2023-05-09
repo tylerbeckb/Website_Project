@@ -12,6 +12,7 @@
 
 .nav_hover:hover {
   opacity: 0.5;
+  color: grey;
 }
 
 .dropdown_menu {
