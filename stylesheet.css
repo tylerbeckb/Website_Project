@@ -159,7 +159,7 @@ figure {
   border-style: solid;
   border-radius: 10px;
   border-width: 2px;
-  width: 10%;
+  width: 15%;
   cursor: pointer;
   text-decoration: none;
   text-align: center;
@@ -688,11 +688,16 @@ footer p {
 
 .extinct_news {
   background-color: rgb(149, 213, 84);
+  height: 520px;
 }
 
 .extinct_news_img {
   padding: 0px;
   margin-top: 75px;
+}
+
+.extinct_news_img img {
+  height: 520px;
 }
 
 .uk_sit_form {
@@ -803,6 +808,14 @@ footer p {
   .card_style p {
     padding-top: 0;
     font-size: 10px;
+  }
+
+  .extinct_news {
+    height: 300px;
+  }
+
+  .extinct_news_img img {
+    height: auto;
   }
 }
 
