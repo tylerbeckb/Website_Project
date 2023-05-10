@@ -31,11 +31,9 @@
     <header class="large_background">
       <figure>
         <img src="Images/charity_background.jpg" alt="Foggy Forest">
-        <figcaption class="reference">(Stefancik.2015)</figcaption>
-        <div class="title">
-          <figcaption><h1>Charities</h1></figcaption>
-          <figcaption>____________________</figcaption>
-        </div>
+        <figcaption>
+          <div class="reference">(Stefancik.2015)</div> <div class="title"><h1>Charities</h1>____________________</div>
+        </figcaption>
       </figure>
     </header>
 
@@ -43,7 +41,7 @@
     <!--Main text section-->
     <section class="coll">
       <div class="col_50">
-        <div id="fadeRight" class="fading">
+        <div class="fading fadeRight">
           <!--Cool Earth-->
           <h2>Cool Earth</h2>
           <br>
@@ -58,13 +56,13 @@
           </p>
         </div>
         <br><br><br>
-        <figure id="fadeRight" class="fading" onclick="pageChange(5)">
+        <figure class="fading fadeRight" onclick="pageChange(5)">
           <img class="col2_img" src="Images/rainforest_trust.jpg" alt="Rainforest">
           <figcaption class="reference">(Cortes.2017)</figcaption>
         </figure>
         <br><br><br><br>
 
-        <div id="fadeRight" class="fading">
+        <div class="fading fadeRight">
           <!--WWF-->
           <h2>WWF</h2>
           <br>
@@ -82,13 +80,13 @@
         </div>
       </div>
       <div class="col_50">
-        <figure id="fadeLeft" class="fading" onclick="pageChange(3)">
+        <figure class="fading fadeLeft" onclick="pageChange(3)">
           <img class="col2_img" src="Images/one_world.jpg" alt="one world sign">
           <figcaption class="reference">(Spiske.2019)</figcaption>
         </figure>
         <br><br>
         
-        <div id="fadeLeft" class="fading">
+        <div class="fading fadeLeft">
           <!--Rainforest Trust-->
           <h2>Rainforest Trust</h2>
           <br>
@@ -103,7 +101,7 @@
           </p>
         </div>
         <br><br>
-        <figure id="fadeLeft" class="fading">
+        <figure class="fading fadeLeft">
           <img class="col2_img" src="Images/rainforest_monkey.jpg" alt="Monkey in a tree" onclick="pageChange(4)">
           <figcaption class="reference">(Lawrey.2018)</figcaption>
         </figure>
@@ -111,7 +109,7 @@
     </section>
 
     <!--Modals-->
-    <section class="main_col">
+    <section class="main_col fading">
       <button id="btn_fact1" onclick="displayFact(1)" type="button" class="btn btn-info" data-bs-toggle="modal" 
       data-bs-target="#fact1">Fun Fact</button> 
       <br><br>
@@ -120,7 +118,7 @@
       <br><br>
       <button id="btn_fact3" type="button" class="btn btn-info" data-bs-toggle="modal" 
       data-bs-target="#fact3">Last Fun Fact</button>
-      
+
       <!--Fact 1-->
       <div class="modal" id="fact1">
         <div class="modal-dialog">
