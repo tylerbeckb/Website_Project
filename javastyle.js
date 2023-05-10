@@ -228,10 +228,10 @@ function loadFade() {
         var bot_window = $(window).scrollTop() + $(window).height();
         if( bot_window > bot_element ) {
           // Checks what animation to use
-          if($(this).attr("id") == "fadeRight") {
+          if($(this).hasClass("fadeRight")) {
             $(this).addClass("fadeShowRight");
           }
-          else if($(this).attr("id") == "fadeLeft") {
+          else if($(this).hasClass("fadeLeft")) {
             $(this).addClass("fadeShowLeft");
           }
           else {
