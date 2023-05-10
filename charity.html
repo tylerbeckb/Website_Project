@@ -112,9 +112,15 @@
 
     <!--Modals-->
     <section class="main_col">
-      <button id="btn_fact1" onclick="displayFact(1)" type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#fact1">Fun Fact</button> 
+      <button id="btn_fact1" onclick="displayFact(1)" type="button" class="btn btn-info" data-bs-toggle="modal" 
+      data-bs-target="#fact1">Fun Fact</button> 
       <br><br>
-      <button id="btn_fact2" type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#fact2">Another Fun Fact</button>
+      <button id="btn_fact2" onclick="displayFact(2)" type="button" class="btn btn-info" data-bs-toggle="modal" 
+      data-bs-target="#fact2">Another Fun Fact</button>
+      <br><br>
+      <button id="btn_fact3" type="button" class="btn btn-info" data-bs-toggle="modal" 
+      data-bs-target="#fact3">Last Fun Fact</button>
+      
       <!--Fact 1-->
       <div class="modal" id="fact1">
         <div class="modal-dialog">
@@ -142,10 +148,28 @@
               <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
             </div>
             <div class="modal-body">
-              WWF has over 5 million supporters
+              Rainforests cover 6% of the Earth and a raindrop can take 10 minutes to fall to the ground
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-success" data-bs-dismiss="modal">Amazing!!</button>
+              <button type="button" class="btn btn-success" data-bs-dismiss="modal">OMG!!</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Fact 3-->
+      <div class="modal" id="fact3">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Fact 3</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              1 million species face extinction by the climate crisis
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-success" data-bs-dismiss="modal">No Way!!</button>
             </div>
           </div>
         </div>
