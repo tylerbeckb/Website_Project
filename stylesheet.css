@@ -123,6 +123,7 @@ h2 {
   margin-top: 100px;
 }
 
+/* Title and references */
 figure {
   position: relative;
 }
@@ -199,6 +200,7 @@ figure {
   margin-top: 50px;
 }
 
+/* Footer */
 footer {
   background-color: whitesmoke;
   text-align: center;
@@ -214,7 +216,6 @@ footer p {
 }
 
 /* single column layout */
-
 .main_col {
   margin: auto;
   padding: 50px;
@@ -316,86 +317,7 @@ footer p {
   padding-top: 20px;
 }
 
-.imgTopLeft {
-  position: fixed;
-  width: 50%;
-  height: 50%;
-}
-
-.h1TopLeft {
-  position: fixed;
-  top: calc(25% - 50px);
-  left: calc(25% - 80px);
-  color: white;
-  font-size: 30px;
-}
-
-.imgBotLeft {
-  position: fixed;
-  width: 50%;
-  height: 50%;
-  top: 50%;
-}
-
-.h1BotLeft {
-  position: fixed;
-  top: calc(75% - 50px);
-  left: calc(25% - 80px);
-  font-size: 30px;
-  color: white;
-}
-
-.imgTopRight {
-  position: fixed;
-  width: 50%;
-  height: 33%;
-  left: 50%;
-}
-
-.h1TopRight {
-  position: fixed;
-  top: calc(18% - 50px);
-  left: calc(75% - 60px);
-  font-size: 30px;
-  color: white;
-}
-
-.imgMiddleRight {
-  position: fixed;
-  width: 50%;
-  height: 33%;
-  left: 50%;
-  top: 33%;
-}
-
-.h1MiddleRight {
-  position: fixed;
-  top: calc(52% - 50px);
-  left: calc(75% - 60px);
-  font-size: 30px;
-  color: white;
-}
-
-.imgBotRight {
-  position: fixed;
-  width: 50%;
-  height: 34%;
-  left: 50%;
-  top: 66%;
-}
-
-.h1BotRight {
-  position: fixed;
-  top: calc(86% - 50px);
-  left: calc(75% - 60px);
-  font-size: 30px;
-  color: white;
-}
-
-.titleContainer a:hover img{
-  filter: brightness(70%);
-}
-
+/* Fading effect */
 .fading {
   position: relative;
   opacity: 0;
@@ -421,10 +343,12 @@ footer p {
   animation: reverseLeft 1.5s 1;
 }
 
+/* Progress bar */
 .progress_style {
   padding-bottom: 3%;
 }
 
+/* Geolocation page */
 .geo_btn {
   text-decoration: none;
   padding: 20px;
@@ -609,6 +533,7 @@ footer p {
   padding: 30px;
 }
 
+/* Extinction */
 .card_style {
   width: 50%;
   float: left;
@@ -651,6 +576,7 @@ footer p {
   padding: 20px;
 }
 
+/* Form styles */
 .checkbox_style {
   text-align: left;
   padding-left: 40%;
@@ -703,6 +629,7 @@ footer p {
   margin-bottom: 50px;
 }
 
+/* Animation */
 @keyframes toFade {
   0% {opacity: 40%; bottom: -500px;}
   50%{opacity: 70%;}
@@ -721,6 +648,7 @@ footer p {
   100% {opacity: 100%; right:0;}
 }
 
+/* Responsivenss */
 @media only screen and (max-width: 895px) {
   /* Mobile Phones */
 
