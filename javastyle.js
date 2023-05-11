@@ -173,7 +173,7 @@ function quiz() {
           $("#3").text(localStorage.threeName + " - " + localStorage.threeValue);
         }
         else {
-          localStorage.threeValue = 3;
+          localStorage.threeValue = 1;
           localStorage.threeName = "Darion Earl";
         }
       }
