@@ -302,6 +302,11 @@ footer p {
   background-color: blanchedalmond;
 }
 
+.leaderboard {
+  text-align: center;
+  list-style-position: inside;
+}
+
 .start_btn {
   margin-top: 5%;
 }
@@ -742,6 +747,16 @@ footer p {
 
   .extinct_news_img img {
     height: auto;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  * {
+    font-size: 10px;
+  }
+
+  .quiz_btn {
+    width: 150px;
   }
 }
 
