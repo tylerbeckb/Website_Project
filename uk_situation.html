@@ -30,11 +30,10 @@
     <header class="large_background">
       <figure>
         <img src="Images/page2_background.jpg" alt="Forest with rising fog">
-        <figcaption class="reference">(Grossgasteiger.2018)</figcaption>
-        <div class="title">
-          <figcaption><h1>UK Situation</h1></figcaption>
-          <figcaption>___________________________</figcaption>
-        </div>
+        <figcaption>
+          <div class="reference">(Grossgasteiger.2018)</div> 
+          <div class="title"><h1>UK Situation</h1>___________________________</div>
+        </figcaption>
       </figure>
     </header>
 
@@ -43,7 +42,7 @@
     <section class="coll">
       <!--Left column-->
       <div class="col_60">
-        <div id="fadeRight" class="fading">
+        <div class="fading fadeRight">
           <!--UK Deforestation-->
           <h2>UK Deforestation</h2>
           <br>
@@ -62,7 +61,7 @@
           </p>
         </div>
         <br>
-        <div id="fadeRight" class="fading">
+        <div class="fading fadeRight">
           <!--UK Reforstation-->
           <h2>UK Reforestation</h2>
           <br>
@@ -80,7 +79,7 @@
       </div>
       <!--Right column-->
       <div class="col_40">
-          <figure id="fadeRight" class="fading">
+          <figure class="fading fadeRight">
             <img src="Images/reforestation.jpg" alt="Reforestation taking place">
             <figcaption class="reference">(International Fund for Animal Welfare.2019)</figcaption>
           </figure>
@@ -98,7 +97,7 @@
       <form id="uk_quest">
         <fieldset>
           <legend>Questionnaire</legend> <br>
-          <label for="">Name:</label>
+          <label for="name">Name:</label>
           <input type="text" name="name" id="name" placeholder="Tim Smith" required>
           <br>
           <label for="email">Email:</label>
@@ -114,7 +113,7 @@
           </div>
           <br>
           <p>Explain the reasoning for your response</p> <br>
-          <textarea rows="4" col="50" maxlength="250"></textarea required> <br><br>
+          <textarea rows="4" maxlength="250" required></textarea><br><br>
           <p>How worried are you about the climate crisis</p><br>
           <input type="range" name="prost" id="prost" min="0" max="100"> <br>
           <label for="prost">Not worried - Really worried (0 - 100)</label> <br> <br>
