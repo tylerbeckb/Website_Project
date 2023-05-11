@@ -758,5 +758,9 @@ footer p {
   .quiz_btn {
     width: 150px;
   }
+
+  .card_style p {
+    font-size: 7px;
+  }
 }
 
