@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" ></script>
-    script defer src="javastyle.js"></script>
+    <script defer src="javastyle.js"></script>
   </head>
 
   <body onload="loadFade(), extinction()">
@@ -44,7 +44,7 @@
       <div id="tiger_card" class="card card_style">
         <img class="card-img-top card_style_img" src="Images/tigerCard.jpg" alt="Tiger">
         <div class="card-body">
-          <h4 class="card-title">Tiger</h4>
+          <h2 class="card-title">Tiger</h2>
         </div>
         <div id="tiger_info_overlay" class="card-img-overlay">
           <p class="card-text">
@@ -56,7 +56,7 @@
       <div id="otter_card" class="card card_style">
         <img class="card-img-top card_style_img" src="Images/giantOtterCard.jpg" alt="Giant Otter">
         <div class="card-body">
-          <h4 class="card-title">Giant Otter</h4>
+          <h2 class="card-title">Giant Otter</h2>
         </div>
         <div id="otter_info_overlay" class="card-img-overlay">
           <p class="card-text">
@@ -100,7 +100,7 @@
           <figure onclick="pageChange(1)">
             <img src="Images/palm_oil.jpg" alt="Palm oil plantation">
             <figcaption>
-              <div id="help_title" class="title"><h2>How to Help</h2>___________________________</div>
+              <div id="help_title" class="title"><h4>How to Help</h4>___________________________</div>
             </figcaption>
           </figure>
           <h2>Make a Difference</h2>
@@ -114,7 +114,7 @@
         <div class="extinct_charity_card">
           <figure onclick="pageChange(2)">
             <img src="Images/charity_background.jpg" alt="Foggy Forest">
-            <div id="char_title" class="title"><h2>Charitites</h2>____________________</div>
+            <div id="char_title" class="title"><h4>Charitites</h4>____________________</div>
           </figure>
           <h2>Who to Donate to</h2>
           <p>
@@ -132,6 +132,7 @@
           <!--Form-->
           <form id="final_form">
             <fieldset>
+              <legend>Questionnaire</legend> <br>
               <label for="name">Name:</label>
               <input type="text" name="name" id="name" placeholder="Tim Smith" required>
               <br>
@@ -162,8 +163,8 @@
               <p>How likely are you to start protesting?</p> <br>
               <input type="range" name="prost" id="prost" min="0" max="100"> <br>
               <label for="prost">Least likely - Most likely (0 - 100)</label> <br> <br>
-              <p>Explain the reasoning for your response</p> <br>
-              <textarea rows="4"></textarea>
+              <label for="textBox">Explain the reasoning for your response</label> <br>
+              <textarea id="textBox" rows="4"></textarea>
               <br><br>
               <input class="sub_btn" type="submit" value="Submit"> <br><br>
             </fieldset>
