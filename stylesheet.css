@@ -409,19 +409,16 @@ footer p {
 .fadeShowRight {
   opacity: 1;
   animation: toRight 1.5s 1;
-  animation-direction: forwards;
 }
 
 .fadeShowLeft {
   opacity: 1;
   animation: toLeft 1.5s 1;
-  animation-direction: forwards;
 }
 
 .fadeRevereLeft {
   opacity: 1;
   animation: reverseLeft 1.5s 1;
-  animation-direction: forwards;
 }
 
 .progress_style {
